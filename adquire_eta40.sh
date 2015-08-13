@@ -31,6 +31,10 @@
 #
 export LANG=en_us_8859_1
 
+
+
+
+
 #
 # verifica sistema
 #
@@ -68,12 +72,12 @@ fi
 # verifica se existe diretorio SAIDA. se não cria.
 #
 if [ ! -f ./SAIDAS ] ; then 
-mkdir ./SAIDAS
+mkdir ./SAIDAS            >./LOG.prn 2>&1 
 fi  
 # entra no direotiro SAIDA e depois diretorio da data do dia
 # onde tudo aocntece. 
 cd SAIDAS
-mkdir $data$hora
+mkdir $data$hora    >./LOG.prn 2>&1 
 cd $data$hora
 
 #
@@ -81,7 +85,7 @@ cd $data$hora
 # Atençao:  
 # Verifique pois o CPTEC altera os caminhos sem avisar!!!
 #
-wget -nc ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/$data$hora/*
+wget -nc ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/$data$hora/* >>./LOG.prn 2>&1
 
 
 #
@@ -281,18 +285,18 @@ echo "'quit'"                          >>figura3.gs
 cp ../../calcula_versao3.gs .
 
 
-grads -lbc "figura.gs"
-grads -lbc "figura2.gs"
-grads -lbc "figura3.gs"
-grads -lbc "calcula_versao3.gs"
+grads -lbc "figura.gs"  >>./LOG.prn 2>&1
+grads -lbc "figura2.gs"  >>./LOG.prn 2>&1
+grads -lbc "figura3.gs"  >>./LOG.prn 2>&1
+grads -lbc "calcula_versao3.gs" >>./LOG.prn 2>&1
 
 
-mkdir imagens_semanaoperativa_1
-mkdir imagens_semanaoperativa_2
-mkdir imagens_7dias
-mv *semanaoperativa_1*  imagens_semanaoperativa_1
-mv *semanaoperativa_2*  imagens_semanaoperativa_2
-mv *prec07dias* imagens_7dias
+mkdir imagens_semanaoperativa_1  >>./LOG.prn 2>&1
+mkdir imagens_semanaoperativa_2 >>./LOG.prn 2>&1
+mkdir imagens_7dias   >>./LOG.prn 2>&1
+mv *semanaoperativa_1*  imagens_semanaoperativa_1  >>./LOG.prn 2>&1
+mv *semanaoperativa_2*  imagens_semanaoperativa_2  >>./LOG.prn 2>&1
+mv *prec07dias* imagens_7dias                      >>./LOG.prn 2>&1
 cd ..
 
 

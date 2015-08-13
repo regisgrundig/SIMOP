@@ -80,6 +80,7 @@ cd SAIDAS
 mkdir $data$hora    >./LOG.prn 2>&1 
 cd $data$hora
 
+echo "["`date`"] BAIXANDO DADOS" 
 #
 # Adquire os dados no site do CPTEC. 
 # Atençao:  
@@ -93,7 +94,7 @@ wget -nc ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/$
 # separados fica dificil de trabalhar com os arquivos
 # por isso vou juntar todos os .bin num único do arquivo
 #
-
+echo "["`date`"] CRIANDO ARQUIVOS PARA O GRADS" 
 rm $data$hora".bin"
 rm *.ctl
 for file in `ls -1 *.bin`
@@ -209,6 +210,7 @@ echo "'q time'"                         >>figura3.gs
 echo "var=subwrd(result,6)"             >>figura3.gs
 echo "if (var = "Sat" )"                >>figura3.gs
 echo "t0=tt"                            >>figura3.gs
+echo "tt=12"                            >>figura3.gs
 echo "endif"                            >>figura3.gs
 echo "tt=tt+1"                          >>figura3.gs
 echo "endwhile"                         >>figura3.gs
@@ -218,18 +220,19 @@ echo "'q time'"                         >>figura3.gs
 echo "var1=subwrd(result,3)"            >>figura3.gs
 echo "var2=subwrd(result,5)"            >>figura3.gs
 echo "'set t 1 last'"                     >>figura3.gs   
+echo "'q time'"                           >>figura3.gs 
 echo "var3=subwrd(result,5)"            >>figura3.gs
 
 echo "ano1=substr(var1,9,4)"                       >>figura3.gs
-echo "mes1=substr(var1,9,4)"                       >>figura3.gs
-echo "dia1=substr(var1,9,4)"                       >>figura3.gs
+echo "mes1=substr(var1,6,3)"                       >>figura3.gs
+echo "dia1=substr(var1,4,2)"                       >>figura3.gs
 echo "ano2=substr(var2,9,4)"                       >>figura3.gs
-echo "mes2=substr(var2,9,4)"                       >>figura3.gs
-echo "dia2=substr(var2,9,4)"                       >>figura3.gs
+echo "mes2=substr(var2,6,3)"                       >>figura3.gs
+echo "dia2=substr(var2,4,2)"                       >>figura3.gs
 echo "ano3=substr(var3,9,4)"                       >>figura3.gs
-echo "mes3=substr(var3,9,4)"                       >>figura3.gs
-echo "dia3=substr(var3,9,4)"                       >>figura3.gs
-
+echo "mes3=substr(var3,6,3)"                       >>figura3.gs
+echo "dia3=substr(var3,4,2)"                       >>figura3.gs
+#echo "return" >>figura3.gs
 
 
 echo "status2=0"                       >>figura3.gs
@@ -256,7 +259,7 @@ echo "'d sum(prec,t=2,t='t0')'"         >>figura3.gs
 echo "'cbarn.gs'"                       >>figura3.gs
 echo "'draw string 0.5 8.3 PRECIPITACAO ACUMULADA SEMANA OPERATIVA 1'"  >>figura3.gs
 echo "'draw string 0.5 8.1 RODADA:"$DATA0" - "$hora"Z'"                >>figura3.gs
-echo "'draw string 0.5 7.9 PERIODO:'dia1"/"mes1"/"ano1 a dia2"/"mes2"/"ano2  '"                     >>figura3.gs
+echo "'draw string 0.5 7.9 PERIODO:'dia1'/'mes1'/'ano1' a 'dia2'/'mes2'/'ano2  "                     >>figura3.gs
 echo "'draw shp ../../CONTORNOS/SHAPES/'shape"                                                  >>figura3.gs
 echo "say shape" >>figura3.gs
 echo "'printim 'bacia'_semanaoperativa_1_"$data".png white'"                       >>figura3.gs
@@ -266,7 +269,7 @@ echo "'d sum(prec,t='t0',t=10)'"                                       >>figura3
 echo "'cbarn.gs'"                                                      >>figura3.gs
 echo "'draw string 0.5 8.3 PRECIPITACAO ACUMULADA SEMANA OPERATIVA 2 '">>figura3.gs
 echo "'draw string 0.5 8.1 RODADA:"$DATA0" - "$hora"Z'"                >>figura3.gs
-echo "'draw string 0.5 7.9 PERIODO:'dia2"/"mes2"/"ano2 a dia3"/"mes3"/"ano3'  "                     >>figura3.gs
+echo "'draw string 0.5 7.9 PERIODO:'dia2'/'mes2'/'ano2' a 'dia3'/'mes3'/'ano3  "                     >>figura3.gs
 echo "'draw shp ../../CONTORNOS/SHAPES/'shape"                                                        >>figura3.gs
 echo "'printim 'bacia'_semanaoperativa_2_"$data".png white'"                       >>figura3.gs
 
@@ -294,7 +297,7 @@ echo "'quit'"                          >>figura3.gs
 
 
 
-
+echo "["`date`"] CALCULANDO MEDIA POR BACIA" 
 #
 # Geracao de produtos
 #
@@ -302,10 +305,12 @@ echo "'quit'"                          >>figura3.gs
 cp ../../calcula_versao3.gs .
 
 
-grads -lbc "figura.gs"  >>./LOG.prn 2>&1
-grads -lbc "figura2.gs"  >>./LOG.prn 2>&1
-grads -lbc "figura3.gs"  >>./LOG.prn 2>&1
-grads -lbc "calcula_versao3.gs" >>./LOG.prn 2>&1
+echo "["`date`"] PLOTANDO FIGURAS" 
+
+grads -lbc "figura.gs"  ##>>./LOG.prn 2>&1
+grads -lbc "figura2.gs"  ##>>./LOG.prn 2>&1
+grads -lbc "figura3.gs"  ##>>./LOG.prn 2>&1
+grads -lbc "calcula_versao3.gs" ##>>./LOG.prn 2>&1
 
 
 mkdir imagens_semanaoperativa_1  >>./LOG.prn 2>&1
@@ -316,5 +321,5 @@ mv *semanaoperativa_2*  imagens_semanaoperativa_2  >>./LOG.prn 2>&1
 mv *prec07dias* imagens_7dias                      >>./LOG.prn 2>&1
 cd ..
 
-
+echo "["`date`"] FIM" 
 

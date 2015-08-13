@@ -12,6 +12,7 @@ while (tt<=10)
 var=subwrd(result,6)
 if (var = Sat )
 t0=tt
+tt=12
 endif
 tt=tt+1
 endwhile
@@ -21,16 +22,17 @@ say t0
 var1=subwrd(result,3)
 var2=subwrd(result,5)
 'set t 1 last'
+'q time'
 var3=subwrd(result,5)
 ano1=substr(var1,9,4)
-mes1=substr(var1,9,4)
-dia1=substr(var1,9,4)
+mes1=substr(var1,6,3)
+dia1=substr(var1,4,2)
 ano2=substr(var2,9,4)
-mes2=substr(var2,9,4)
-dia2=substr(var2,9,4)
+mes2=substr(var2,6,3)
+dia2=substr(var2,4,2)
 ano3=substr(var3,9,4)
-mes3=substr(var3,9,4)
-dia3=substr(var3,9,4)
+mes3=substr(var3,6,3)
+dia3=substr(var3,4,2)
 status2=0
 while(!status2)
 fd=read("../../CONTORNOS/CADASTRADAS/limites_das_bacias.dat")
@@ -54,7 +56,7 @@ if (tipo = RETRATO)
 'cbarn.gs'
 'draw string 0.5 8.3 PRECIPITACAO ACUMULADA SEMANA OPERATIVA 1'
 'draw string 0.5 8.1 RODADA:13/08/2015 - 00Z'
-'draw string 0.5 7.9 PERIODO:'dia1/mes1/ano1 a dia2/mes2/ano2  '
+'draw string 0.5 7.9 PERIODO:'dia1'/'mes1'/'ano1' a 'dia2'/'mes2'/'ano2  
 'draw shp ../../CONTORNOS/SHAPES/'shape
 say shape
 'printim 'bacia'_semanaoperativa_1_20150813.png white'
@@ -64,7 +66,7 @@ say shape
 'cbarn.gs'
 'draw string 0.5 8.3 PRECIPITACAO ACUMULADA SEMANA OPERATIVA 2 '
 'draw string 0.5 8.1 RODADA:13/08/2015 - 00Z'
-'draw string 0.5 7.9 PERIODO:'dia2/mes2/ano2 a dia3/mes3/ano3'  
+'draw string 0.5 7.9 PERIODO:'dia2'/'mes2'/'ano2' a 'dia3'/'mes3'/'ano3  
 'draw shp ../../CONTORNOS/SHAPES/'shape
 'printim 'bacia'_semanaoperativa_2_20150813.png white'
 'c'

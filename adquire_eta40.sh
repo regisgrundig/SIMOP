@@ -27,6 +27,21 @@
 #--------------------------------------------------------------------------
 
 #
+# força a libguagem ser inglês
+#
+export LANG=en_us_8859_1
+
+#
+# verifica sistema
+#
+MACH=`uname -a | cut -c1-5` 
+if [ $MACH = "Linux" ];then 
+export GADDIR=/opt/opengrads
+export GADLIB=/opt/opengrads
+export GASCRP=/opt/opengrads
+fi 
+
+#
 # Pega data do dia (relogio do micro)
 # DATA0 = data de hoje
 # DATA1 = data de amanha (para os produtos)

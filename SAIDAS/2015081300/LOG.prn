@@ -1,4 +1,4 @@
---2015-08-13 16:10:24--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/*
+--2015-08-13 16:56:47--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/*
            => '.listing'
 Resolving ftp1.cptec.inpe.br (ftp1.cptec.inpe.br)... 150.163.141.22
 Connecting to ftp1.cptec.inpe.br (ftp1.cptec.inpe.br)|150.163.141.22|:21... connected.
@@ -7,501 +7,222 @@ Logging in as anonymous ... Logged in!
 ==> TYPE I ... done.  ==> CWD (1) /modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300 ... done.
 ==> PASV ... done.    ==> LIST ... done.
 
-     0K .                                                      69.0K=0.02s
+     0K .                                                      78.6K=0.02s
 
-2015-08-13 16:10:25 (69.0 KB/s) - '.listing' saved [1637]
-
-Removed '.listing'.
-File 'pp20150813_0036.bin' already there; not retrieving.
-File 'pp20150813_0036.ctl' already there; not retrieving.
-File 'pp20150813_0060.bin' already there; not retrieving.
-File 'pp20150813_0060.ctl' already there; not retrieving.
-File 'pp20150813_0084.bin' already there; not retrieving.
-File 'pp20150813_0084.ctl' already there; not retrieving.
-File 'pp20150813_0108.bin' already there; not retrieving.
-File 'pp20150813_0108.ctl' already there; not retrieving.
-File 'pp20150813_0132.bin' already there; not retrieving.
-File 'pp20150813_0132.ctl' already there; not retrieving.
-File 'pp20150813_0156.bin' already there; not retrieving.
-File 'pp20150813_0156.ctl' already there; not retrieving.
-File 'pp20150813_0180.bin' already there; not retrieving.
-File 'pp20150813_0180.ctl' already there; not retrieving.
-File 'pp20150813_0204.bin' already there; not retrieving.
---2015-08-13 16:10:25--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0204.ctl
-           => 'pp20150813_0204.ctl'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0204.ctl ... done.
-Length: 263
-
-     0K                                                       100% 2.81M=0s
-
-2015-08-13 16:10:25 (2.81 MB/s) - 'pp20150813_0204.ctl' saved [263]
-
---2015-08-13 16:10:25--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0228.bin
-           => 'pp20150813_0228.bin'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0228.bin ... done.
-Length: 90432 (88K)
-
-     0K .......... .......... .......... .......... .......... 56%  704K 0s
-    50K .......... .......... .......... ........             100% 1.33M=0.1s
-
-2015-08-13 16:10:25 (890 KB/s) - 'pp20150813_0228.bin' saved [90432]
-
---2015-08-13 16:10:25--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0228.ctl
-           => 'pp20150813_0228.ctl'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0228.ctl ... done.
-Length: 263
-
-     0K                                                       100% 2.76M=0s
-
-2015-08-13 16:10:25 (2.76 MB/s) - 'pp20150813_0228.ctl' saved [263]
-
---2015-08-13 16:10:25--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0252.bin
-           => 'pp20150813_0252.bin'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0252.bin ... done.
-Length: 90432 (88K)
-
-     0K .......... .......... .......... .......... .......... 56%  748K 0s
-    50K .......... .......... .......... ........             100% 1.34M=0.09s
-
-2015-08-13 16:10:25 (932 KB/s) - 'pp20150813_0252.bin' saved [90432]
-
---2015-08-13 16:10:25--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0252.ctl
-           => 'pp20150813_0252.ctl'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0252.ctl ... done.
-Length: 263
-
-     0K                                                       100% 3.02M=0s
-
-2015-08-13 16:10:26 (3.02 MB/s) - 'pp20150813_0252.ctl' saved [263]
-
-      0 [main] grads 13836 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
-the public mailing list cygwin@cygwin.com
-Starting grads under C:\OPENGR~1\Contents\Cygwin\Versions\201OGA~1.1\i686 ...
-
-Grid Analysis and Display System (GrADS) Version 2.0.1.oga.1
-Copyright (c) 1988-2011 by Brian Doty and the
-Institute for Global Environment and Society (IGES)
-GrADS comes with ABSOLUTELY NO WARRANTY
-See file COPYRIGHT for more information
-
-Config: v2.0.1.oga.1 little-endian readline printim grib2 netcdf hdf4-sds hdf5 opendap-grids,stn athena geotiff shapefile
-Issue 'q config' command for more detailed configuration information
-Loading User Defined Extensions table </cygdrive/c/OPENGR~1/Contents/Cygwin/Versions/201OGA~1.1/i686/gex/udxt> ... ok.
-GX Package Initialization: Size = 11 8.5 
-Running in Batch mode
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-No hardcopy metafile open
-GX package terminated 
-      0 [main] grads 14624 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
-the public mailing list cygwin@cygwin.com
-Starting grads under C:\OPENGR~1\Contents\Cygwin\Versions\201OGA~1.1\i686 ...
-
-Grid Analysis and Display System (GrADS) Version 2.0.1.oga.1
-Copyright (c) 1988-2011 by Brian Doty and the
-Institute for Global Environment and Society (IGES)
-GrADS comes with ABSOLUTELY NO WARRANTY
-See file COPYRIGHT for more information
-
-Config: v2.0.1.oga.1 little-endian readline printim grib2 netcdf hdf4-sds hdf5 opendap-grids,stn athena geotiff shapefile
-Issue 'q config' command for more detailed configuration information
-Loading User Defined Extensions table </cygdrive/c/OPENGR~1/Contents/Cygwin/Versions/201OGA~1.1/i686/gex/udxt> ... ok.
-GX Package Initialization: Size = 11 8.5 
-Running in Batch mode
-10
-Time = 12Z14AUG2015 to 12Z22AUG2015  Fri to Sat
-
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-No hardcopy metafile open
-GX package terminated 
-      0 [main] grads 3012 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
-the public mailing list cygwin@cygwin.com
-Starting grads under C:\OPENGR~1\Contents\Cygwin\Versions\201OGA~1.1\i686 ...
-
-Grid Analysis and Display System (GrADS) Version 2.0.1.oga.1
-Copyright (c) 1988-2011 by Brian Doty and the
-Institute for Global Environment and Society (IGES)
-GrADS comes with ABSOLUTELY NO WARRANTY
-See file COPYRIGHT for more information
-
-Config: v2.0.1.oga.1 little-endian readline printim grib2 netcdf hdf4-sds hdf5 opendap-grids,stn athena geotiff shapefile
-Issue 'q config' command for more detailed configuration information
-Loading User Defined Extensions table </cygdrive/c/OPENGR~1/Contents/Cygwin/Versions/201OGA~1.1/i686/gex/udxt> ... ok.
-GX Package Initialization: Size = 11 8.5 
-Running in Batch mode
-10
-Time = 12Z14AUG2015 to 12Z22AUG2015  Fri to Sat
-
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/jacui.shp" 
-jacui.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/jacui.shp" 
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-contorno_paranaiba.shp
-Cannot plot color bar: No shading information
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-contorno_tiete.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-contorno_iguacu.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-contorno_parana.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/contorno_paraiba_sul2.shp" 
-contorno_paraiba_sul2.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/contorno_paraiba_sul2.shp" 
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-contorno_sfrancisco.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/contorno_jequitinhonha.shp" 
-contorno_jequitinhonha.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/contorno_jequitinhonha.shp" 
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-contorno_Grande.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-contorno_paranapanema.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-contorno_tocantins.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-contorno_uruguai.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-itaipu.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-itaipu_e.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-itaipu_d.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-No hardcopy metafile open
-GX package terminated 
-      0 [main] grads 13816 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
-the public mailing list cygwin@cygwin.com
-Starting grads under C:\OPENGR~1\Contents\Cygwin\Versions\201OGA~1.1\i686 ...
-
-Grid Analysis and Display System (GrADS) Version 2.0.1.oga.1
-Copyright (c) 1988-2011 by Brian Doty and the
-Institute for Global Environment and Society (IGES)
-GrADS comes with ABSOLUTELY NO WARRANTY
-See file COPYRIGHT for more information
-
-Config: v2.0.1.oga.1 little-endian readline printim grib2 netcdf hdf4-sds hdf5 opendap-grids,stn athena geotiff shapefile
-Issue 'q config' command for more detailed configuration information
-Loading User Defined Extensions table </cygdrive/c/OPENGR~1/Contents/Cygwin/Versions/201OGA~1.1/i686/gex/udxt> ... ok.
-GX Package Initialization: Size = 11 8.5 
-Running in Batch mode
-No hardcopy metafile open
-All files closed; all defined objects released;
-All GrADS attributes have been reinitialized
-calculando para  bacia:grande.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/grande.bacia
-==================================10
-calculando para  bacia:iguacu.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/iguacu.bacia
-==================================10
-calculando para  bacia:jacui.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/jacui.bacia
-==================================10
-calculando para  bacia:jequitinhonha.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/jequitinhonha.bacia
-==================================10
-calculando para  bacia:paraibadosul.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/paraibadosul.bacia
-==================================10
-calculando para  bacia:parana.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/parana.bacia
-==================================10
-calculando para  bacia:paranaiba.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/paranaiba.bacia
-==================================10
-calculando para  bacia:paranapanema.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/paranapanema.bacia
-==================================10
-calculando para  bacia:saofrancisco.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/saofrancisco.bacia
-==================================10
-calculando para  bacia:tiete.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/tiete.bacia
-==================================10
-calculando para  bacia:tocantins.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/tocantins.bacia
-==================================10
-calculando para  bacia:uruguai.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/uruguai.bacia
-==================================10
-calculando para  bacia:itaipu.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/itaipu.bacia
-==================================10
-calculando para  bacia:itaipu_d.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/itaipu_d.bacia
-==================================10
-calculando para  bacia:itaipu_e.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/itaipu_e.bacia
-==================================10
-No hardcopy metafile open
-GX package terminated 
-mkdir: cannot create directory 'imagens_semanaoperativa_1': File exists
-mkdir: cannot create directory 'imagens_semanaoperativa_2': File exists
-mkdir: cannot create directory 'imagens_7dias': File exists
-mv: cannot move 'imagens_semanaoperativa_1' to a subdirectory of itself, 'imagens_semanaoperativa_1/imagens_semanaoperativa_1'
-mv: cannot move 'imagens_semanaoperativa_2' to a subdirectory of itself, 'imagens_semanaoperativa_2/imagens_semanaoperativa_2'
---2015-08-13 16:11:29--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/*
-           => '.listing'
-Resolving ftp1.cptec.inpe.br (ftp1.cptec.inpe.br)... 150.163.141.22
-Connecting to ftp1.cptec.inpe.br (ftp1.cptec.inpe.br)|150.163.141.22|:21... connected.
-Logging in as anonymous ... Logged in!
-==> SYST ... done.    ==> PWD ... done.
-==> TYPE I ... done.  ==> CWD (1) /modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300 ... done.
-==> PASV ... done.    ==> LIST ... done.
-
-     0K .                                                       117K=0.01s
-
-2015-08-13 16:11:30 (117 KB/s) - '.listing' saved [1637]
+2015-08-13 16:56:48 (78.6 KB/s) - '.listing' saved [1637]
 
 Removed '.listing'.
---2015-08-13 16:11:30--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0036.bin
+--2015-08-13 16:56:48--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0036.bin
            => 'pp20150813_0036.bin'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0036.bin ... done.
 Length: 90432 (88K)
 
-     0K .......... .......... .......... .......... .......... 56%  619K 0s
-    50K .......... .......... .......... ........             100%  900K=0.1s
+     0K .......... .......... .......... .......... .......... 56% 1.04M 0s
+    50K .......... .......... .......... ........             100% 1.74M=0.07s
 
-2015-08-13 16:11:30 (716 KB/s) - 'pp20150813_0036.bin' saved [90432]
+2015-08-13 16:56:48 (1.26 MB/s) - 'pp20150813_0036.bin' saved [90432]
 
---2015-08-13 16:11:30--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0036.ctl
+--2015-08-13 16:56:48--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0036.ctl
            => 'pp20150813_0036.ctl'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0036.ctl ... done.
 Length: 263
 
-     0K                                                       100% 3.26M=0s
+     0K                                                       100% 3.45M=0s
 
-2015-08-13 16:11:30 (3.26 MB/s) - 'pp20150813_0036.ctl' saved [263]
+2015-08-13 16:56:48 (3.45 MB/s) - 'pp20150813_0036.ctl' saved [263]
 
---2015-08-13 16:11:30--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0060.bin
+--2015-08-13 16:56:48--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0060.bin
            => 'pp20150813_0060.bin'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0060.bin ... done.
 Length: 90432 (88K)
 
-     0K .......... .......... .......... .......... .......... 56%  532K 0s
-    50K .......... .......... .......... ........             100%  327K=0.2s
+     0K .......... .......... .......... .......... .......... 56% 1.10M 0s
+    50K .......... .......... .......... ........             100% 1.58M=0.07s
 
-2015-08-13 16:11:31 (418 KB/s) - 'pp20150813_0060.bin' saved [90432]
+2015-08-13 16:56:48 (1.27 MB/s) - 'pp20150813_0060.bin' saved [90432]
 
---2015-08-13 16:11:31--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0060.ctl
+--2015-08-13 16:56:48--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0060.ctl
            => 'pp20150813_0060.ctl'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0060.ctl ... done.
 Length: 263
 
-     0K                                                       100% 3.02M=0s
+     0K                                                       100% 8.15M=0s
 
-2015-08-13 16:11:31 (3.02 MB/s) - 'pp20150813_0060.ctl' saved [263]
+2015-08-13 16:56:48 (8.15 MB/s) - 'pp20150813_0060.ctl' saved [263]
 
---2015-08-13 16:11:31--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0084.bin
+--2015-08-13 16:56:48--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0084.bin
            => 'pp20150813_0084.bin'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0084.bin ... done.
 Length: 90432 (88K)
 
-     0K .......... .......... .......... .......... .......... 56%  774K 0s
-    50K .......... .......... .......... ........             100%  976K=0.1s
+     0K .......... .......... .......... .......... .......... 56% 1.02M 0s
+    50K .......... .......... .......... ........             100% 1.59M=0.07s
 
-2015-08-13 16:11:31 (850 KB/s) - 'pp20150813_0084.bin' saved [90432]
+2015-08-13 16:56:48 (1.21 MB/s) - 'pp20150813_0084.bin' saved [90432]
 
---2015-08-13 16:11:31--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0084.ctl
+--2015-08-13 16:56:48--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0084.ctl
            => 'pp20150813_0084.ctl'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0084.ctl ... done.
 Length: 263
 
-     0K                                                       100% 3.90M=0s
+     0K                                                       100% 4.48M=0s
 
-2015-08-13 16:11:31 (3.90 MB/s) - 'pp20150813_0084.ctl' saved [263]
+2015-08-13 16:56:48 (4.48 MB/s) - 'pp20150813_0084.ctl' saved [263]
 
---2015-08-13 16:11:31--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0108.bin
+--2015-08-13 16:56:48--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0108.bin
            => 'pp20150813_0108.bin'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0108.bin ... done.
 Length: 90432 (88K)
 
-     0K .......... .......... .......... .......... .......... 56%  633K 0s
-    50K .......... .......... .......... ........             100% 1.21M=0.1s
+     0K .......... .......... .......... .......... .......... 56% 1.96M 0s
+    50K .......... .......... .......... ........             100% 1.75M=0.05s
 
-2015-08-13 16:11:31 (804 KB/s) - 'pp20150813_0108.bin' saved [90432]
+2015-08-13 16:56:49 (1.86 MB/s) - 'pp20150813_0108.bin' saved [90432]
 
---2015-08-13 16:11:31--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0108.ctl
+--2015-08-13 16:56:49--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0108.ctl
            => 'pp20150813_0108.ctl'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0108.ctl ... done.
 Length: 263
 
-     0K                                                       100% 94.4K=0.003s
+     0K                                                       100% 9.60M=0s
 
-2015-08-13 16:11:32 (94.4 KB/s) - 'pp20150813_0108.ctl' saved [263]
+2015-08-13 16:56:49 (9.60 MB/s) - 'pp20150813_0108.ctl' saved [263]
 
---2015-08-13 16:11:32--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0132.bin
+--2015-08-13 16:56:49--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0132.bin
            => 'pp20150813_0132.bin'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0132.bin ... done.
 Length: 90432 (88K)
 
-     0K .......... .......... .......... .......... .......... 56% 1.03M 0s
-    50K .......... .......... .......... ........             100% 1.29M=0.08s
+     0K .......... .......... .......... .......... .......... 56% 1.04M 0s
+    50K .......... .......... .......... ........             100% 1.75M=0.07s
 
-2015-08-13 16:11:32 (1.13 MB/s) - 'pp20150813_0132.bin' saved [90432]
+2015-08-13 16:56:49 (1.26 MB/s) - 'pp20150813_0132.bin' saved [90432]
 
---2015-08-13 16:11:32--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0132.ctl
+--2015-08-13 16:56:49--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0132.ctl
            => 'pp20150813_0132.ctl'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0132.ctl ... done.
 Length: 263
 
-     0K                                                       100% 5.54M=0s
+     0K                                                       100% 4.68M=0s
 
-2015-08-13 16:11:32 (5.54 MB/s) - 'pp20150813_0132.ctl' saved [263]
+2015-08-13 16:56:49 (4.68 MB/s) - 'pp20150813_0132.ctl' saved [263]
 
---2015-08-13 16:11:32--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0156.bin
+--2015-08-13 16:56:49--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0156.bin
            => 'pp20150813_0156.bin'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0156.bin ... done.
 Length: 90432 (88K)
 
-     0K .......... .......... .......... .......... .......... 56%  904K 0s
-    50K .......... .......... .......... ........             100%  949K=0.1s
+     0K .......... .......... .......... .......... .......... 56% 2.14M 0s
+    50K .......... .......... .......... ........             100% 1.54M=0.05s
 
-2015-08-13 16:11:32 (923 KB/s) - 'pp20150813_0156.bin' saved [90432]
+2015-08-13 16:56:49 (1.83 MB/s) - 'pp20150813_0156.bin' saved [90432]
 
---2015-08-13 16:11:32--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0156.ctl
+--2015-08-13 16:56:49--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0156.ctl
            => 'pp20150813_0156.ctl'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0156.ctl ... done.
+Length: 263
+
+     0K                                                       100% 3.04M=0s
+
+2015-08-13 16:56:49 (3.04 MB/s) - 'pp20150813_0156.ctl' saved [263]
+
+--2015-08-13 16:56:49--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0180.bin
+           => 'pp20150813_0180.bin'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0180.bin ... done.
+Length: 90432 (88K)
+
+     0K .......... .......... .......... .......... .......... 56% 1.78M 0s
+    50K .......... .......... .......... ........             100% 1.30M=0.06s
+
+2015-08-13 16:56:49 (1.54 MB/s) - 'pp20150813_0180.bin' saved [90432]
+
+--2015-08-13 16:56:49--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0180.ctl
+           => 'pp20150813_0180.ctl'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0180.ctl ... done.
+Length: 263
+
+     0K                                                       100% 2.58M=0s
+
+2015-08-13 16:56:49 (2.58 MB/s) - 'pp20150813_0180.ctl' saved [263]
+
+--2015-08-13 16:56:49--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0204.bin
+           => 'pp20150813_0204.bin'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0204.bin ... done.
+Length: 90432 (88K)
+
+     0K .......... .......... .......... .......... .......... 56% 1008K 0s
+    50K .......... .......... .......... ........             100% 1.31M=0.08s
+
+2015-08-13 16:56:50 (1.10 MB/s) - 'pp20150813_0204.bin' saved [90432]
+
+--2015-08-13 16:56:50--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0204.ctl
+           => 'pp20150813_0204.ctl'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0204.ctl ... done.
+Length: 263
+
+     0K                                                       100% 3.42M=0s
+
+2015-08-13 16:56:50 (3.42 MB/s) - 'pp20150813_0204.ctl' saved [263]
+
+--2015-08-13 16:56:50--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0228.bin
+           => 'pp20150813_0228.bin'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0228.bin ... done.
+Length: 90432 (88K)
+
+     0K .......... .......... .......... .......... .......... 56% 1.65M 0s
+    50K .......... .......... .......... ........             100% 1.59M=0.05s
+
+2015-08-13 16:56:50 (1.63 MB/s) - 'pp20150813_0228.bin' saved [90432]
+
+--2015-08-13 16:56:50--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0228.ctl
+           => 'pp20150813_0228.ctl'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0228.ctl ... done.
 Length: 263
 
      0K                                                       100% 3.36M=0s
 
-2015-08-13 16:11:32 (3.36 MB/s) - 'pp20150813_0156.ctl' saved [263]
+2015-08-13 16:56:50 (3.36 MB/s) - 'pp20150813_0228.ctl' saved [263]
 
---2015-08-13 16:11:32--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0180.bin
-           => 'pp20150813_0180.bin'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0180.bin ... done.
-Length: 90432 (88K)
-
-     0K .......... .......... .......... .......... .......... 56%  775K 0s
-    50K .......... .......... .......... ........             100%  731K=0.1s
-
-2015-08-13 16:11:32 (755 KB/s) - 'pp20150813_0180.bin' saved [90432]
-
---2015-08-13 16:11:32--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0180.ctl
-           => 'pp20150813_0180.ctl'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0180.ctl ... done.
-Length: 263
-
-     0K                                                       100% 2.01M=0s
-
-2015-08-13 16:11:33 (2.01 MB/s) - 'pp20150813_0180.ctl' saved [263]
-
---2015-08-13 16:11:33--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0204.bin
-           => 'pp20150813_0204.bin'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0204.bin ... done.
-Length: 90432 (88K)
-
-     0K .......... .......... .......... .......... .......... 56%  316K 0s
-    50K .......... .......... .......... ........             100%  576K=0.2s
-
-2015-08-13 16:11:33 (393 KB/s) - 'pp20150813_0204.bin' saved [90432]
-
---2015-08-13 16:11:33--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0204.ctl
-           => 'pp20150813_0204.ctl'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0204.ctl ... done.
-Length: 263
-
-     0K                                                       100% 3.02M=0s
-
-2015-08-13 16:11:34 (3.02 MB/s) - 'pp20150813_0204.ctl' saved [263]
-
---2015-08-13 16:11:34--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0228.bin
-           => 'pp20150813_0228.bin'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0228.bin ... done.
-Length: 90432 (88K)
-
-     0K .......... .......... .......... .......... .......... 56%  445K 0s
-    50K .......... .......... .......... ........             100%  387K=0.2s
-
-2015-08-13 16:11:34 (418 KB/s) - 'pp20150813_0228.bin' saved [90432]
-
---2015-08-13 16:11:34--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0228.ctl
-           => 'pp20150813_0228.ctl'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0228.ctl ... done.
-Length: 263
-
-     0K                                                       100% 3.07M=0s
-
-2015-08-13 16:11:34 (3.07 MB/s) - 'pp20150813_0228.ctl' saved [263]
-
---2015-08-13 16:11:34--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0252.bin
+--2015-08-13 16:56:50--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0252.bin
            => 'pp20150813_0252.bin'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0252.bin ... done.
 Length: 90432 (88K)
 
-     0K .......... .......... .......... .......... .......... 56%  399K 0s
-    50K .......... .......... .......... ........             100%  913K=0.2s
+     0K .......... .......... .......... .......... .......... 56%  641K 0s
+    50K .......... .......... .......... ........             100% 1.58M=0.1s
 
-2015-08-13 16:11:35 (528 KB/s) - 'pp20150813_0252.bin' saved [90432]
+2015-08-13 16:56:50 (868 KB/s) - 'pp20150813_0252.bin' saved [90432]
 
---2015-08-13 16:11:35--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0252.ctl
+--2015-08-13 16:56:50--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0252.ctl
            => 'pp20150813_0252.ctl'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0252.ctl ... done.
 Length: 263
 
-     0K                                                       100% 3.58M=0s
+     0K                                                       100% 3.76M=0s
 
-2015-08-13 16:11:35 (3.58 MB/s) - 'pp20150813_0252.ctl' saved [263]
+2015-08-13 16:56:50 (3.76 MB/s) - 'pp20150813_0252.ctl' saved [263]
 
-      0 [main] grads 860 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+      0 [main] grads 15060 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
 the public mailing list cygwin@cygwin.com
 Starting grads under C:\OPENGR~1\Contents\Cygwin\Versions\201OGA~1.1\i686 ...
 
@@ -519,7 +240,7 @@ Running in Batch mode
 Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
 No hardcopy metafile open
 GX package terminated 
-      0 [main] grads 14292 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+      0 [main] grads 9588 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
 the public mailing list cygwin@cygwin.com
 Starting grads under C:\OPENGR~1\Contents\Cygwin\Versions\201OGA~1.1\i686 ...
 
@@ -542,7 +263,7 @@ Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp"
 10
 No hardcopy metafile open
 GX package terminated 
-      0 [main] grads 13116 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+      0 [main] grads 12668 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
 the public mailing list cygwin@cygwin.com
 Starting grads under C:\OPENGR~1\Contents\Cygwin\Versions\201OGA~1.1\i686 ...
 
@@ -560,47 +281,13 @@ Running in Batch mode
 10
 Time = 12Z14AUG2015 to 12Z22AUG2015  Fri to Sat
 
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/jacui.shp" 
-jacui.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/jacui.shp" 
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-contorno_paranaiba.shp
-Cannot plot color bar: No shading information
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-contorno_tiete.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-contorno_iguacu.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
 contorno_parana.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/contorno_paraiba_sul2.shp" 
-contorno_paraiba_sul2.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/contorno_paraiba_sul2.shp" 
 Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
 10
 contorno_sfrancisco.shp
 Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
 10
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/contorno_jequitinhonha.shp" 
-contorno_jequitinhonha.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/contorno_jequitinhonha.shp" 
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-contorno_Grande.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-contorno_paranapanema.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
 contorno_tocantins.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-contorno_uruguai.shp
 Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
 10
 itaipu.shp
@@ -614,7 +301,7 @@ Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp"
 10
 No hardcopy metafile open
 GX package terminated 
-      0 [main] grads 4668 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+      0 [main] grads 9896 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
 the public mailing list cygwin@cygwin.com
 Starting grads under C:\OPENGR~1\Contents\Cygwin\Versions\201OGA~1.1\i686 ...
 
@@ -694,18 +381,9 @@ Error in close:  file not open
 ==================================10
 No hardcopy metafile open
 GX package terminated 
-mkdir: cannot create directory 'imagens_semanaoperativa_1': File exists
-mkdir: cannot create directory 'imagens_semanaoperativa_2': File exists
-mkdir: cannot create directory 'imagens_7dias': File exists
 mv: cannot move 'imagens_semanaoperativa_1' to a subdirectory of itself, 'imagens_semanaoperativa_1/imagens_semanaoperativa_1'
 mv: cannot move 'imagens_semanaoperativa_2' to a subdirectory of itself, 'imagens_semanaoperativa_2/imagens_semanaoperativa_2'
---2015-08-13 16:17:58--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/*
-           => '.listing'
-Resolving ftp1.cptec.inpe.br (ftp1.cptec.inpe.br)... 150.163.141.22
-Connecting to ftp1.cptec.inpe.br (ftp1.cptec.inpe.br)|150.163.141.22|:21... connected.
-Logging in as anonymous ... Logged in!
-==> SYST ... done.    ==> PWD ... done.
-==> TYPE I ... done.  ==> CWD (1) /modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300 ... --2015-08-13 16:21:22--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/*
+--2015-08-13 17:21:39--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/*
            => '.listing'
 Resolving ftp1.cptec.inpe.br (ftp1.cptec.inpe.br)... 150.163.141.22
 Connecting to ftp1.cptec.inpe.br (ftp1.cptec.inpe.br)|150.163.141.22|:21... connected.
@@ -714,304 +392,86 @@ Logging in as anonymous ... Logged in!
 ==> TYPE I ... done.  ==> CWD (1) /modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300 ... done.
 ==> PASV ... done.    ==> LIST ... done.
 
-     0K .                                                       103K=0.02s
+     0K .                                                       259K=0.006s
 
-2015-08-13 16:21:22 (103 KB/s) - '.listing' saved [1637]
+2015-08-13 17:21:39 (259 KB/s) - '.listing' saved [1637]
 
 Removed '.listing'.
---2015-08-13 16:21:22--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0036.bin
+--2015-08-13 17:21:39--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0036.bin
            => 'pp20150813_0036.bin'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0036.bin ... done.
 Length: 90432 (88K)
 
-     0K .......... .......... .......... .......... .......... 56%  472K 0s
-    50K .......... .......... .......... ........             100%  819K=0.2s
+     0K .......... .......... .......... .......... .......... 56%  431K 0s
+    50K .......... .......... .......... ........             100% 1.68M=0.1s
 
-2015-08-13 16:21:23 (578 KB/s) - 'pp20150813_0036.bin' saved [90432]
+2015-08-13 17:21:39 (639 KB/s) - 'pp20150813_0036.bin' saved [90432]
 
---2015-08-13 16:21:23--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0036.ctl
+--2015-08-13 17:21:39--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0036.ctl
            => 'pp20150813_0036.ctl'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0036.ctl ... done.
 Length: 263
 
-     0K                                                       100% 10.2K=0.03s
+     0K                                                       100% 6.68K=0.04s
 
-2015-08-13 16:21:23 (10.2 KB/s) - 'pp20150813_0036.ctl' saved [263]
+2015-08-13 17:21:39 (6.68 KB/s) - 'pp20150813_0036.ctl' saved [263]
 
---2015-08-13 16:21:23--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0060.bin
+--2015-08-13 17:21:39--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0060.bin
            => 'pp20150813_0060.bin'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0060.bin ... done.
 Length: 90432 (88K)
 
-     0K .......... .......... .......... .......... .......... 56%  482K 0s
-    50K .......... .......... .......... ........             100% 1.70M=0.1s
+     0K .......... .......... .......... .......... .......... 56%  701K 0s
+    50K .......... .......... .......... ........             100%  888K=0.1s
 
-2015-08-13 16:21:23 (702 KB/s) - 'pp20150813_0060.bin' saved [90432]
+2015-08-13 17:21:40 (771 KB/s) - 'pp20150813_0060.bin' saved [90432]
 
---2015-08-13 16:21:23--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0060.ctl
+--2015-08-13 17:21:40--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0060.ctl
            => 'pp20150813_0060.ctl'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0060.ctl ... done.
 Length: 263
 
-     0K                                                       100%  156K=0.002s
+     0K                                                       100%  134K=0.002s
 
-2015-08-13 16:21:23 (156 KB/s) - 'pp20150813_0060.ctl' saved [263]
+2015-08-13 17:21:40 (134 KB/s) - 'pp20150813_0060.ctl' saved [263]
 
---2015-08-13 16:21:23--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0084.bin
+--2015-08-13 17:21:40--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0084.bin
            => 'pp20150813_0084.bin'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0084.bin ... done.
 Length: 90432 (88K)
 
-     0K .......... .......... .......... .......... .......... 56%  485K 0s
-    50K .......... .......... .......... ........             100% 1.51M=0.1s
+     0K .......... .......... .......... .......... .......... 56%  434K 0s
+    50K .......... .......... .......... ........             100% 1.68M=0.1s
 
-2015-08-13 16:21:23 (690 KB/s) - 'pp20150813_0084.bin' saved [90432]
+2015-08-13 17:21:40 (642 KB/s) - 'pp20150813_0084.bin' saved [90432]
 
---2015-08-13 16:21:23--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0084.ctl
+--2015-08-13 17:21:40--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0084.ctl
            => 'pp20150813_0084.ctl'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0084.ctl ... done.
 Length: 263
 
-     0K                                                       100%  141K=0.002s
+     0K                                                       100% 2.66M=0s
 
-2015-08-13 16:21:23 (141 KB/s) - 'pp20150813_0084.ctl' saved [263]
+2015-08-13 17:21:40 (2.66 MB/s) - 'pp20150813_0084.ctl' saved [263]
 
---2015-08-13 16:21:23--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0108.bin
+--2015-08-13 17:21:40--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0108.bin
            => 'pp20150813_0108.bin'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0108.bin ... done.
 Length: 90432 (88K)
 
-     0K .......... .......... .......... .......... .......... 56%  607K 0s
-    50K .......... .......... .......... ........             100% 1.35M=0.1s
+     0K .......... .......... .......... .......... .......... 56%  486K 0s
+    50K .......... .......... .......... ........             100% 1.37M=0.1s
 
-2015-08-13 16:21:24 (802 KB/s) - 'pp20150813_0108.bin' saved [90432]
+2015-08-13 17:21:40 (678 KB/s) - 'pp20150813_0108.bin' saved [90432]
 
---2015-08-13 16:21:24--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0108.ctl
-           => 'pp20150813_0108.ctl'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0108.ctl ... done.
-Length: 263
-
-     0K                                                       100%  103K=0.003s
-
-2015-08-13 16:21:24 (103 KB/s) - 'pp20150813_0108.ctl' saved [263]
-
---2015-08-13 16:21:24--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0132.bin
-           => 'pp20150813_0132.bin'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0132.bin ... done.
-Length: 90432 (88K)
-
-     0K .......... .......... .......... .......... .......... 56%  709K 0s
-    50K .......... .......... .......... ........             100%  831K=0.1s
-
-2015-08-13 16:21:24 (758 KB/s) - 'pp20150813_0132.bin' saved [90432]
-
---2015-08-13 16:21:24--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0132.ctl
-           => 'pp20150813_0132.ctl'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0132.ctl ... done.
-Length: 263
-
-     0K                                                       100% 76.8K=0.003s
-
-2015-08-13 16:21:24 (76.8 KB/s) - 'pp20150813_0132.ctl' saved [263]
-
---2015-08-13 16:21:24--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0156.bin
-           => 'pp20150813_0156.bin'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0156.bin ... done.
-Length: 90432 (88K)
-
-     0K .......... .......... .......... .......... .......... 56%  659K 0s
-    50K .......... .......... .......... ........             100% 1.45M=0.1s
-
-2015-08-13 16:21:24 (868 KB/s) - 'pp20150813_0156.bin' saved [90432]
-
---2015-08-13 16:21:24--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0156.ctl
-           => 'pp20150813_0156.ctl'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0156.ctl ... done.
-Length: 263
-
-     0K                                                       100%  114K=0.002s
-
-2015-08-13 16:21:24 (114 KB/s) - 'pp20150813_0156.ctl' saved [263]
-
---2015-08-13 16:21:24--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0180.bin
-           => 'pp20150813_0180.bin'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0180.bin ... done.
-Length: 90432 (88K)
-
-     0K .......... .......... .......... .......... .......... 56%  561K 0s
-    50K .......... .......... .......... ........             100% 1.36M=0.1s
-
-2015-08-13 16:21:24 (757 KB/s) - 'pp20150813_0180.bin' saved [90432]
-
---2015-08-13 16:21:24--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0180.ctl
-           => 'pp20150813_0180.ctl'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0180.ctl ... done.
-Length: 263
-
-     0K                                                       100%  186K=0.001s
-
-2015-08-13 16:21:25 (186 KB/s) - 'pp20150813_0180.ctl' saved [263]
-
---2015-08-13 16:21:25--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0204.bin
-           => 'pp20150813_0204.bin'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0204.bin ... done.
-Length: 90432 (88K)
-
-     0K .......... .......... .......... .......... .......... 56%  463K 0s
-    50K .......... .......... .......... ........             100% 1.60M=0.1s
-
-2015-08-13 16:21:25 (672 KB/s) - 'pp20150813_0204.bin' saved [90432]
-
---2015-08-13 16:21:25--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0204.ctl
-           => 'pp20150813_0204.ctl'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0204.ctl ... done.
-Length: 263
-
-     0K                                                       100%  171K=0.002s
-
-2015-08-13 16:21:25 (171 KB/s) - 'pp20150813_0204.ctl' saved [263]
-
---2015-08-13 16:21:25--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0228.bin
-           => 'pp20150813_0228.bin'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0228.bin ... done.
-Length: 90432 (88K)
-
-     0K .......... .......... .......... .......... .......... 56%  570K 0s
-    50K .......... .......... .......... ........             100% 1.61M=0.1s
-
-2015-08-13 16:21:25 (796 KB/s) - 'pp20150813_0228.bin' saved [90432]
-
---2015-08-13 16:21:25--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0228.ctl
-           => 'pp20150813_0228.ctl'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0228.ctl ... done.
-Length: 263
-
-     0K                                                       100% 63.9K=0.004s
-
-2015-08-13 16:21:25 (63.9 KB/s) - 'pp20150813_0228.ctl' saved [263]
-
---2015-08-13 16:21:25--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0252.bin
-           => 'pp20150813_0252.bin'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0252.bin ... done.
-Length: 90432 (88K)
-
-     0K .......... .......... .......... .......... .......... 56%  584K 0s
-    50K .......... .......... .......... ........             100% 1.36M=0.1s
-
-2015-08-13 16:21:25 (780 KB/s) - 'pp20150813_0252.bin' saved [90432]
-
---2015-08-13 16:21:25--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0252.ctl
-           => 'pp20150813_0252.ctl'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0252.ctl ... done.
-Length: 263
-
-     0K                                                       100%  161K=0.002s
-
-2015-08-13 16:21:25 (161 KB/s) - 'pp20150813_0252.ctl' saved [263]
-
---2015-08-13 16:21:56--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/*
-           => '.listing'
-Resolving ftp1.cptec.inpe.br (ftp1.cptec.inpe.br)... 150.163.141.22
-Connecting to ftp1.cptec.inpe.br (ftp1.cptec.inpe.br)|150.163.141.22|:21... connected.
-Logging in as anonymous ... Logged in!
-==> SYST ... done.    ==> PWD ... done.
-==> TYPE I ... done.  ==> CWD (1) /modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300 ... done.
-==> PASV ... done.    ==> LIST ... done.
-
-     0K .                                                       106K=0.02s
-
-2015-08-13 16:21:56 (106 KB/s) - '.listing' saved [1637]
-
-Removed '.listing'.
---2015-08-13 16:21:56--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0036.bin
-           => 'pp20150813_0036.bin'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0036.bin ... done.
-Length: 90432 (88K)
-
-     0K .......... .......... .......... .......... .......... 56%  492K 0s
-    50K .......... .......... .......... ........             100%  990K=0.1s
-
-2015-08-13 16:21:56 (629 KB/s) - 'pp20150813_0036.bin' saved [90432]
-
---2015-08-13 16:21:56--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0036.ctl
-           => 'pp20150813_0036.ctl'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0036.ctl ... done.
-Length: 263
-
-     0K                                                       100% 3.30M=0s
-
-2015-08-13 16:21:57 (3.30 MB/s) - 'pp20150813_0036.ctl' saved [263]
-
-File 'pp20150813_0060.bin' already there; not retrieving.
---2015-08-13 16:21:57--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0060.ctl
-           => 'pp20150813_0060.ctl'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0060.ctl ... done.
-Length: 263
-
-     0K                                                       100%  430K=0.001s
-
-2015-08-13 16:21:57 (430 KB/s) - 'pp20150813_0060.ctl' saved [263]
-
-File 'pp20150813_0084.bin' already there; not retrieving.
---2015-08-13 16:21:57--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0084.ctl
-           => 'pp20150813_0084.ctl'
-==> CWD not required.
-==> PASV ... done.    ==> RETR pp20150813_0084.ctl ... done.
-Length: 263
-
-     0K                                                       100% 8.27M=0s
-
-2015-08-13 16:21:57 (8.27 MB/s) - 'pp20150813_0084.ctl' saved [263]
-
-File 'pp20150813_0108.bin' already there; not retrieving.
---2015-08-13 16:21:57--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0108.ctl
-           => 'pp20150813_0108.ctl'
-==> CWD not required.
-==> PASV ... --2015-08-13 16:22:15--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/*
-           => '.listing'
-Resolving ftp1.cptec.inpe.br (ftp1.cptec.inpe.br)... 150.163.141.22
-Connecting to ftp1.cptec.inpe.br (ftp1.cptec.inpe.br)|150.163.141.22|:21... connected.
-Logging in as anonymous ... Logged in!
-==> SYST ... done.    ==> PWD ... done.
-==> TYPE I ... done.  ==> CWD (1) /modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300 ... done.
-==> PASV ... done.    ==> LIST ... done.
-
-     0K .                                                      93.7K=0.02s
-
-2015-08-13 16:22:16 (93.7 KB/s) - '.listing' saved [1637]
-
-Removed '.listing'.
-File 'pp20150813_0036.bin' already there; not retrieving.
-File 'pp20150813_0036.ctl' already there; not retrieving.
-File 'pp20150813_0060.bin' already there; not retrieving.
-File 'pp20150813_0060.ctl' already there; not retrieving.
-File 'pp20150813_0084.bin' already there; not retrieving.
-File 'pp20150813_0084.ctl' already there; not retrieving.
-File 'pp20150813_0108.bin' already there; not retrieving.
---2015-08-13 16:22:16--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0108.ctl
+--2015-08-13 17:21:40--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0108.ctl
            => 'pp20150813_0108.ctl'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0108.ctl ... done.
@@ -1019,75 +479,135 @@ Length: 263
 
      0K                                                       100% 3.51M=0s
 
-2015-08-13 16:22:16 (3.51 MB/s) - 'pp20150813_0108.ctl' saved [263]
+2015-08-13 17:21:40 (3.51 MB/s) - 'pp20150813_0108.ctl' saved [263]
 
-File 'pp20150813_0132.bin' already there; not retrieving.
---2015-08-13 16:22:16--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0132.ctl
+--2015-08-13 17:21:40--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0132.bin
+           => 'pp20150813_0132.bin'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0132.bin ... done.
+Length: 90432 (88K)
+
+     0K .......... .......... .......... .......... .......... 56%  396K 0s
+    50K .......... .......... .......... ........             100% 1.71M=0.1s
+
+2015-08-13 17:21:41 (596 KB/s) - 'pp20150813_0132.bin' saved [90432]
+
+--2015-08-13 17:21:41--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0132.ctl
            => 'pp20150813_0132.ctl'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0132.ctl ... done.
 Length: 263
 
-     0K                                                       100% 3.81M=0s
+     0K                                                       100%  140K=0.002s
 
-2015-08-13 16:22:16 (3.81 MB/s) - 'pp20150813_0132.ctl' saved [263]
+2015-08-13 17:21:41 (140 KB/s) - 'pp20150813_0132.ctl' saved [263]
 
-File 'pp20150813_0156.bin' already there; not retrieving.
---2015-08-13 16:22:16--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0156.ctl
+--2015-08-13 17:21:41--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0156.bin
+           => 'pp20150813_0156.bin'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0156.bin ... done.
+Length: 90432 (88K)
+
+     0K .......... .......... .......... .......... .......... 56%  658K 0s
+    50K .......... .......... .......... ........             100% 1.59M=0.1s
+
+2015-08-13 17:21:41 (887 KB/s) - 'pp20150813_0156.bin' saved [90432]
+
+--2015-08-13 17:21:41--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0156.ctl
            => 'pp20150813_0156.ctl'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0156.ctl ... done.
 Length: 263
 
-     0K                                                       100% 4.30M=0s
+     0K                                                       100%  969K=0s
 
-2015-08-13 16:22:16 (4.30 MB/s) - 'pp20150813_0156.ctl' saved [263]
+2015-08-13 17:21:41 (969 KB/s) - 'pp20150813_0156.ctl' saved [263]
 
-File 'pp20150813_0180.bin' already there; not retrieving.
---2015-08-13 16:22:16--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0180.ctl
+--2015-08-13 17:21:41--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0180.bin
+           => 'pp20150813_0180.bin'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0180.bin ... done.
+Length: 90432 (88K)
+
+     0K .......... .......... .......... .......... .......... 56%  573K 0s
+    50K .......... .......... .......... ........             100%  688K=0.1s
+
+2015-08-13 17:21:41 (618 KB/s) - 'pp20150813_0180.bin' saved [90432]
+
+--2015-08-13 17:21:41--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0180.ctl
            => 'pp20150813_0180.ctl'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0180.ctl ... done.
 Length: 263
 
-     0K                                                       100% 3.42M=0s
+     0K                                                       100%  159K=0.002s
 
-2015-08-13 16:22:17 (3.42 MB/s) - 'pp20150813_0180.ctl' saved [263]
+2015-08-13 17:21:41 (159 KB/s) - 'pp20150813_0180.ctl' saved [263]
 
-File 'pp20150813_0204.bin' already there; not retrieving.
---2015-08-13 16:22:17--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0204.ctl
+--2015-08-13 17:21:41--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0204.bin
+           => 'pp20150813_0204.bin'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0204.bin ... done.
+Length: 90432 (88K)
+
+     0K .......... .......... .......... .......... .......... 56%  555K 0s
+    50K .......... .......... .......... ........             100% 1.17M=0.1s
+
+2015-08-13 17:21:41 (724 KB/s) - 'pp20150813_0204.bin' saved [90432]
+
+--2015-08-13 17:21:41--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0204.ctl
            => 'pp20150813_0204.ctl'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0204.ctl ... done.
 Length: 263
 
-     0K                                                       100% 4.41M=0s
+     0K                                                       100% 58.8K=0.004s
 
-2015-08-13 16:22:17 (4.41 MB/s) - 'pp20150813_0204.ctl' saved [263]
+2015-08-13 17:21:42 (58.8 KB/s) - 'pp20150813_0204.ctl' saved [263]
 
-File 'pp20150813_0228.bin' already there; not retrieving.
---2015-08-13 16:22:17--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0228.ctl
+--2015-08-13 17:21:42--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0228.bin
+           => 'pp20150813_0228.bin'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0228.bin ... done.
+Length: 90432 (88K)
+
+     0K .......... .......... .......... .......... .......... 56%  472K 0s
+    50K .......... .......... .......... ........             100% 1008K=0.1s
+
+2015-08-13 17:21:42 (614 KB/s) - 'pp20150813_0228.bin' saved [90432]
+
+--2015-08-13 17:21:42--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0228.ctl
            => 'pp20150813_0228.ctl'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0228.ctl ... done.
 Length: 263
 
-     0K                                                       100% 1.81M=0s
+     0K                                                       100% 51.1K=0.005s
 
-2015-08-13 16:22:17 (1.81 MB/s) - 'pp20150813_0228.ctl' saved [263]
+2015-08-13 17:21:42 (51.1 KB/s) - 'pp20150813_0228.ctl' saved [263]
 
-File 'pp20150813_0252.bin' already there; not retrieving.
---2015-08-13 16:22:17--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0252.ctl
+--2015-08-13 17:21:42--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0252.bin
+           => 'pp20150813_0252.bin'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0252.bin ... done.
+Length: 90432 (88K)
+
+     0K .......... .......... .......... .......... .......... 56%  499K 0s
+    50K .......... .......... .......... ........             100% 1.01M=0.1s
+
+2015-08-13 17:21:42 (644 KB/s) - 'pp20150813_0252.bin' saved [90432]
+
+--2015-08-13 17:21:42--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0252.ctl
            => 'pp20150813_0252.ctl'
 ==> CWD not required.
 ==> PASV ... done.    ==> RETR pp20150813_0252.ctl ... done.
 Length: 263
 
-     0K                                                       100% 3.56M=0s
+     0K                                                       100% 4.93M=0s
 
-2015-08-13 16:22:17 (3.56 MB/s) - 'pp20150813_0252.ctl' saved [263]
+2015-08-13 17:21:42 (4.93 MB/s) - 'pp20150813_0252.ctl' saved [263]
 
-      0 [main] grads 7472 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+      0 [main] grads 1716 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
 the public mailing list cygwin@cygwin.com
 Starting grads under C:\OPENGR~1\Contents\Cygwin\Versions\201OGA~1.1\i686 ...
 
@@ -1105,7 +625,7 @@ Running in Batch mode
 Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
 No hardcopy metafile open
 GX package terminated 
-      0 [main] grads 8120 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+      0 [main] grads 8364 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
 the public mailing list cygwin@cygwin.com
 Starting grads under C:\OPENGR~1\Contents\Cygwin\Versions\201OGA~1.1\i686 ...
 
@@ -1128,7 +648,7 @@ Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp"
 10
 No hardcopy metafile open
 GX package terminated 
-      0 [main] grads 876 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+      1 [main] grads 12396 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
 the public mailing list cygwin@cygwin.com
 Starting grads under C:\OPENGR~1\Contents\Cygwin\Versions\201OGA~1.1\i686 ...
 
@@ -1143,64 +663,236 @@ Issue 'q config' command for more detailed configuration information
 Loading User Defined Extensions table </cygdrive/c/OPENGR~1/Contents/Cygwin/Versions/201OGA~1.1/i686/gex/udxt> ... ok.
 GX Package Initialization: Size = 11 8.5 
 Running in Batch mode
-10
-Time = 12Z14AUG2015 to 12Z22AUG2015  Fri to Sat
-
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/jacui.shp" 
-jacui.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/jacui.shp" 
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-contorno_paranaiba.shp
-Cannot plot color bar: No shading information
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-contorno_tiete.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-contorno_iguacu.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
 10
 contorno_parana.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/contorno_paraiba_sul2.shp" 
-contorno_paraiba_sul2.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/contorno_paraiba_sul2.shp" 
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-contorno_sfrancisco.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/contorno_jequitinhonha.shp" 
-contorno_jequitinhonha.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/contorno_jequitinhonha.shp" 
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-contorno_Grande.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-contorno_paranapanema.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-contorno_tocantins.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-contorno_uruguai.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-itaipu.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-itaipu_e.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-itaipu_d.shp
-Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
-10
-No hardcopy metafile open
-GX package terminated 
-      0 [main] grads 4724 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+Non-numeric args to numeric operation
+  Error occurred on line 67
+  In file figura3.gs
+ga-> ga-> --2015-08-13 17:24:34--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/*
+           => '.listing'
+Resolving ftp1.cptec.inpe.br (ftp1.cptec.inpe.br)... 150.163.141.22
+Connecting to ftp1.cptec.inpe.br (ftp1.cptec.inpe.br)|150.163.141.22|:21... connected.
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD (1) /modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300 ... done.
+==> PASV ... done.    ==> LIST ... done.
+
+     0K .                                                      85.5K=0.02s
+
+2015-08-13 17:24:35 (85.5 KB/s) - '.listing' saved [1637]
+
+Removed '.listing'.
+--2015-08-13 17:24:35--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0036.bin
+           => 'pp20150813_0036.bin'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0036.bin ... done.
+Length: 90432 (88K)
+
+     0K .......... .......... .......... .......... .......... 56% 1.01M 0s
+    50K .......... .......... .......... ........             100% 1.55M=0.07s
+
+2015-08-13 17:24:35 (1.19 MB/s) - 'pp20150813_0036.bin' saved [90432]
+
+--2015-08-13 17:24:35--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0036.ctl
+           => 'pp20150813_0036.ctl'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0036.ctl ... done.
+Length: 263
+
+     0K                                                       100% 2.70M=0s
+
+2015-08-13 17:24:35 (2.70 MB/s) - 'pp20150813_0036.ctl' saved [263]
+
+--2015-08-13 17:24:35--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0060.bin
+           => 'pp20150813_0060.bin'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0060.bin ... done.
+Length: 90432 (88K)
+
+     0K .......... .......... .......... .......... .......... 56%  887K 0s
+    50K .......... .......... .......... ........             100% 1.71M=0.08s
+
+2015-08-13 17:24:35 (1.10 MB/s) - 'pp20150813_0060.bin' saved [90432]
+
+--2015-08-13 17:24:35--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0060.ctl
+           => 'pp20150813_0060.ctl'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0060.ctl ... done.
+Length: 263
+
+     0K                                                       100% 1.36M=0s
+
+2015-08-13 17:24:35 (1.36 MB/s) - 'pp20150813_0060.ctl' saved [263]
+
+--2015-08-13 17:24:35--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0084.bin
+           => 'pp20150813_0084.bin'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0084.bin ... done.
+Length: 90432 (88K)
+
+     0K .......... .......... .......... .......... .......... 56% 1.07M 0s
+    50K .......... .......... .......... ........             100% 1004K=0.08s
+
+2015-08-13 17:24:35 (1.03 MB/s) - 'pp20150813_0084.bin' saved [90432]
+
+--2015-08-13 17:24:35--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0084.ctl
+           => 'pp20150813_0084.ctl'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0084.ctl ... done.
+Length: 263
+
+     0K                                                       100% 3.92M=0s
+
+2015-08-13 17:24:36 (3.92 MB/s) - 'pp20150813_0084.ctl' saved [263]
+
+--2015-08-13 17:24:36--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0108.bin
+           => 'pp20150813_0108.bin'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0108.bin ... done.
+Length: 90432 (88K)
+
+     0K .......... .......... .......... .......... .......... 56%  718K 0s
+    50K .......... .......... .......... ........             100% 1.45M=0.1s
+
+2015-08-13 17:24:36 (925 KB/s) - 'pp20150813_0108.bin' saved [90432]
+
+--2015-08-13 17:24:36--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0108.ctl
+           => 'pp20150813_0108.ctl'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0108.ctl ... done.
+Length: 263
+
+     0K                                                       100% 4.89M=0s
+
+2015-08-13 17:24:36 (4.89 MB/s) - 'pp20150813_0108.ctl' saved [263]
+
+--2015-08-13 17:24:36--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0132.bin
+           => 'pp20150813_0132.bin'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0132.bin ... done.
+Length: 90432 (88K)
+
+     0K .......... .......... .......... .......... .......... 56%  793K 0s
+    50K .......... .......... .......... ........             100% 1.60M=0.09s
+
+2015-08-13 17:24:36 (1022 KB/s) - 'pp20150813_0132.bin' saved [90432]
+
+--2015-08-13 17:24:36--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0132.ctl
+           => 'pp20150813_0132.ctl'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0132.ctl ... done.
+Length: 263
+
+     0K                                                       100% 6.81M=0s
+
+2015-08-13 17:24:36 (6.81 MB/s) - 'pp20150813_0132.ctl' saved [263]
+
+--2015-08-13 17:24:36--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0156.bin
+           => 'pp20150813_0156.bin'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0156.bin ... done.
+Length: 90432 (88K)
+
+     0K .......... .......... .......... .......... .......... 56% 1.05M 0s
+    50K .......... .......... .......... ........             100% 1.45M=0.07s
+
+2015-08-13 17:24:36 (1.20 MB/s) - 'pp20150813_0156.bin' saved [90432]
+
+--2015-08-13 17:24:36--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0156.ctl
+           => 'pp20150813_0156.ctl'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0156.ctl ... done.
+Length: 263
+
+     0K                                                       100% 1.55M=0s
+
+2015-08-13 17:24:36 (1.55 MB/s) - 'pp20150813_0156.ctl' saved [263]
+
+--2015-08-13 17:24:36--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0180.bin
+           => 'pp20150813_0180.bin'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0180.bin ... done.
+Length: 90432 (88K)
+
+     0K .......... .......... .......... .......... .......... 56%  835K 0s
+    50K .......... .......... .......... ........             100% 1.38M=0.09s
+
+2015-08-13 17:24:37 (1015 KB/s) - 'pp20150813_0180.bin' saved [90432]
+
+--2015-08-13 17:24:37--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0180.ctl
+           => 'pp20150813_0180.ctl'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0180.ctl ... done.
+Length: 263
+
+     0K                                                       100% 3.56M=0s
+
+2015-08-13 17:24:37 (3.56 MB/s) - 'pp20150813_0180.ctl' saved [263]
+
+--2015-08-13 17:24:37--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0204.bin
+           => 'pp20150813_0204.bin'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0204.bin ... done.
+Length: 90432 (88K)
+
+     0K .......... .......... .......... .......... .......... 56%  881K 0s
+    50K .......... .......... .......... ........             100% 1.18M=0.09s
+
+2015-08-13 17:24:37 (998 KB/s) - 'pp20150813_0204.bin' saved [90432]
+
+--2015-08-13 17:24:37--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0204.ctl
+           => 'pp20150813_0204.ctl'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0204.ctl ... done.
+Length: 263
+
+     0K                                                       100% 2.91M=0s
+
+2015-08-13 17:24:37 (2.91 MB/s) - 'pp20150813_0204.ctl' saved [263]
+
+--2015-08-13 17:24:37--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0228.bin
+           => 'pp20150813_0228.bin'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0228.bin ... done.
+Length: 90432 (88K)
+
+     0K .......... .......... .......... .......... .......... 56%  804K 0s
+    50K .......... .......... .......... ........             100% 1.31M=0.09s
+
+2015-08-13 17:24:37 (974 KB/s) - 'pp20150813_0228.bin' saved [90432]
+
+--2015-08-13 17:24:37--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0228.ctl
+           => 'pp20150813_0228.ctl'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0228.ctl ... done.
+Length: 263
+
+     0K                                                       100% 3.26M=0s
+
+2015-08-13 17:24:37 (3.26 MB/s) - 'pp20150813_0228.ctl' saved [263]
+
+--2015-08-13 17:24:37--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0252.bin
+           => 'pp20150813_0252.bin'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0252.bin ... done.
+Length: 90432 (88K)
+
+     0K .......... .......... .......... .......... .......... 56% 56.2M 0s
+    50K .......... .......... .......... ........             100% 2.17M=0.02s
+
+2015-08-13 17:24:37 (4.77 MB/s) - 'pp20150813_0252.bin' saved [90432]
+
+--2015-08-13 17:24:37--  ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/2015081300/pp20150813_0252.ctl
+           => 'pp20150813_0252.ctl'
+==> CWD not required.
+==> PASV ... done.    ==> RETR pp20150813_0252.ctl ... done.
+Length: 263
+
+     0K                                                       100% 4.20M=0s
+
+2015-08-13 17:24:38 (4.20 MB/s) - 'pp20150813_0252.ctl' saved [263]
+
+      0 [main] grads 1516 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
 the public mailing list cygwin@cygwin.com
 Starting grads under C:\OPENGR~1\Contents\Cygwin\Versions\201OGA~1.1\i686 ...
 
@@ -1215,73 +907,49 @@ Issue 'q config' command for more detailed configuration information
 Loading User Defined Extensions table </cygdrive/c/OPENGR~1/Contents/Cygwin/Versions/201OGA~1.1/i686/gex/udxt> ... ok.
 GX Package Initialization: Size = 11 8.5 
 Running in Batch mode
-No hardcopy metafile open
-All files closed; all defined objects released;
-All GrADS attributes have been reinitialized
-calculando para  bacia:grande.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/grande.bacia
-==================================10
-calculando para  bacia:iguacu.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/iguacu.bacia
-==================================10
-calculando para  bacia:jacui.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/jacui.bacia
-==================================10
-calculando para  bacia:jequitinhonha.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/jequitinhonha.bacia
-==================================10
-calculando para  bacia:paraibadosul.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/paraibadosul.bacia
-==================================10
-calculando para  bacia:parana.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/parana.bacia
-==================================10
-calculando para  bacia:paranaiba.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/paranaiba.bacia
-==================================10
-calculando para  bacia:paranapanema.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/paranapanema.bacia
-==================================10
-calculando para  bacia:saofrancisco.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/saofrancisco.bacia
-==================================10
-calculando para  bacia:tiete.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/tiete.bacia
-==================================10
-calculando para  bacia:tocantins.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/tocantins.bacia
-==================================10
-calculando para  bacia:uruguai.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/uruguai.bacia
-==================================10
-calculando para  bacia:itaipu.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/itaipu.bacia
-==================================10
-calculando para  bacia:itaipu_d.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/itaipu_d.bacia
-==================================10
-calculando para  bacia:itaipu_e.bacia
-Error in close:  file not open
-  File name = ../../CONTORNOS/CADASTRADAS/itaipu_e.bacia
-==================================10
+Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
 No hardcopy metafile open
 GX package terminated 
-mkdir: cannot create directory 'imagens_semanaoperativa_1': File exists
-mkdir: cannot create directory 'imagens_semanaoperativa_2': File exists
-mkdir: cannot create directory 'imagens_7dias': File exists
-mv: cannot move 'imagens_semanaoperativa_1' to a subdirectory of itself, 'imagens_semanaoperativa_1/imagens_semanaoperativa_1'
-mv: cannot move 'imagens_semanaoperativa_2' to a subdirectory of itself, 'imagens_semanaoperativa_2/imagens_semanaoperativa_2'
+      0 [main] grads 14452 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Starting grads under C:\OPENGR~1\Contents\Cygwin\Versions\201OGA~1.1\i686 ...
+
+Grid Analysis and Display System (GrADS) Version 2.0.1.oga.1
+Copyright (c) 1988-2011 by Brian Doty and the
+Institute for Global Environment and Society (IGES)
+GrADS comes with ABSOLUTELY NO WARRANTY
+See file COPYRIGHT for more information
+
+Config: v2.0.1.oga.1 little-endian readline printim grib2 netcdf hdf4-sds hdf5 opendap-grids,stn athena geotiff shapefile
+Issue 'q config' command for more detailed configuration information
+Loading User Defined Extensions table </cygdrive/c/OPENGR~1/Contents/Cygwin/Versions/201OGA~1.1/i686/gex/udxt> ... ok.
+GX Package Initialization: Size = 11 8.5 
+Running in Batch mode
+10
+Time = 12Z14AUG2015 to 12Z22AUG2015  Fri to Sat
+
+Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
+Error: Unable to open shapefile "../../CONTORNOS/SHAPES/itaipu.shp" 
+10
+No hardcopy metafile open
+GX package terminated 
+      1 [main] grads 2564 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Starting grads under C:\OPENGR~1\Contents\Cygwin\Versions\201OGA~1.1\i686 ...
+
+Grid Analysis and Display System (GrADS) Version 2.0.1.oga.1
+Copyright (c) 1988-2011 by Brian Doty and the
+Institute for Global Environment and Society (IGES)
+GrADS comes with ABSOLUTELY NO WARRANTY
+See file COPYRIGHT for more information
+
+Config: v2.0.1.oga.1 little-endian readline printim grib2 netcdf hdf4-sds hdf5 opendap-grids,stn athena geotiff shapefile
+Issue 'q config' command for more detailed configuration information
+Loading User Defined Extensions table </cygdrive/c/OPENGR~1/Contents/Cygwin/Versions/201OGA~1.1/i686/gex/udxt> ... ok.
+GX Package Initialization: Size = 11 8.5 
+Running in Batch mode
+10
+Non-terminated constant
+  Error occurred on line 57
+  In file figura3.gs
+ga-> 

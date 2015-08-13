@@ -168,7 +168,7 @@ echo "var1=subwrd(result,3)"            >>figura2.gs
 echo "var2=subwrd(result,5)"            >>figura2.gs
 echo "say result"                       >>figura2.gs
 echo "'set t 1'"                        >>figura2.gs
-echo "'../../cores.gs'"                    >>figura2.gs
+echo "'../../cores.gs'"                 >>figura2.gs
 echo "'d sum(prec,t=2,t='t0')'"         >>figura2.gs
 echo "'cbarn.gs'"                       >>figura2.gs
 echo "'draw string 0.5 8.3 PRECIPITACAO ACUMULADA SEMANA OPERATIVA 1'"  >>figura2.gs
@@ -200,11 +200,14 @@ echo "'set t 2 last'"                   >>figura3.gs
 echo "'q time'"                         >>figura3.gs
 echo "var3=subwrd(result,5)"            >>figura3.gs
 echo "tt=1"                             >>figura3.gs
+#
+# Script grads: acha o dia que cai no sábado
+#
 echo "while (tt<=10)"                   >>figura3.gs
 echo "'set t ' tt"                      >>figura3.gs
 echo "'q time'"                         >>figura3.gs
 echo "var=subwrd(result,6)"             >>figura3.gs
-echo 'if (var = "Sat" )'                >>figura3.gs
+echo "if (var = "Sat" )"                >>figura3.gs
 echo "t0=tt"                            >>figura3.gs
 echo "endif"                            >>figura3.gs
 echo "tt=tt+1"                          >>figura3.gs
@@ -214,7 +217,21 @@ echo "'set t 2 't0"                     >>figura3.gs
 echo "'q time'"                         >>figura3.gs
 echo "var1=subwrd(result,3)"            >>figura3.gs
 echo "var2=subwrd(result,5)"            >>figura3.gs
-echo "say result"                       >>figura3.gs
+echo "'set t 1 last'"                     >>figura3.gs   
+echo "var3=subwrd(result,5)"            >>figura3.gs
+
+echo "ano1=substr(var1,9,4)"                       >>figura3.gs
+echo "mes1=substr(var1,9,4)"                       >>figura3.gs
+echo "dia1=substr(var1,9,4)"                       >>figura3.gs
+echo "ano2=substr(var2,9,4)"                       >>figura3.gs
+echo "mes2=substr(var2,9,4)"                       >>figura3.gs
+echo "dia2=substr(var2,9,4)"                       >>figura3.gs
+echo "ano3=substr(var3,9,4)"                       >>figura3.gs
+echo "mes3=substr(var3,9,4)"                       >>figura3.gs
+echo "dia3=substr(var3,9,4)"                       >>figura3.gs
+
+
+
 echo "status2=0"                       >>figura3.gs
 echo "while(!status2)" >>figura3.gs
 echo 'fd=read("../../CONTORNOS/CADASTRADAS/limites_das_bacias.dat")' >>figura3.gs
@@ -227,6 +244,9 @@ echo "x0=subwrd(linha,3)"       >>figura3.gs
 echo "x1=subwrd(linha,4)"       >>figura3.gs
 echo "y0=subwrd(linha,5)"       >>figura3.gs
 echo "y1=subwrd(linha,6)"       >>figura3.gs
+echo "tipo=subwrd(linha,7)"     >>figura3.gs
+
+echo "if (tipo = "RETRATO") "   >>figura3.gs
 echo "'set lon 'x1' 'x0 "       >>figura3.gs
 echo "'set lat 'y1' 'y0 "       >>figura3.gs
 echo "'c'"                        >>figura3.gs
@@ -236,7 +256,7 @@ echo "'d sum(prec,t=2,t='t0')'"         >>figura3.gs
 echo "'cbarn.gs'"                       >>figura3.gs
 echo "'draw string 0.5 8.3 PRECIPITACAO ACUMULADA SEMANA OPERATIVA 1'"  >>figura3.gs
 echo "'draw string 0.5 8.1 RODADA:"$DATA0" - "$hora"Z'"                >>figura3.gs
-echo "'draw string 0.5 7.9 PERIODO:'var1' a 'var2"                     >>figura3.gs
+echo "'draw string 0.5 7.9 PERIODO:'dia1"/"mes1"/"ano1 a dia2"/"mes2"/"ano2  '"                     >>figura3.gs
 echo "'draw shp ../../CONTORNOS/SHAPES/'shape"                                                  >>figura3.gs
 echo "say shape" >>figura3.gs
 echo "'printim 'bacia'_semanaoperativa_1_"$data".png white'"                       >>figura3.gs
@@ -246,7 +266,7 @@ echo "'d sum(prec,t='t0',t=10)'"                                       >>figura3
 echo "'cbarn.gs'"                                                      >>figura3.gs
 echo "'draw string 0.5 8.3 PRECIPITACAO ACUMULADA SEMANA OPERATIVA 2 '">>figura3.gs
 echo "'draw string 0.5 8.1 RODADA:"$DATA0" - "$hora"Z'"                >>figura3.gs
-echo "'draw string 0.5 7.9 PERIODO:'var2' a 'var3"                     >>figura3.gs
+echo "'draw string 0.5 7.9 PERIODO:'dia2"/"mes2"/"ano2 a dia3"/"mes3"/"ano3'  "                     >>figura3.gs
 echo "'draw shp ../../CONTORNOS/SHAPES/'shape"                                                        >>figura3.gs
 echo "'printim 'bacia'_semanaoperativa_2_"$data".png white'"                       >>figura3.gs
 
@@ -262,11 +282,8 @@ echo "'cbarn.gs'"                                            >>figura3.gs
 echo "'../../plota.gs'"                                         >>figura3.gs
 echo "'printim 'bacia'_prec07dias_"$data"_"$hora"Z.png white'"       >>figura3.gs
 
-
-
-
-
 echo "say t0"                           >>figura3.gs
+echo "endif"                            >>figura3.gs 
 echo "endif"                            >>figura3.gs 
 echo "endwhile"                            >>figura3.gs 
 echo "'quit'"                          >>figura3.gs

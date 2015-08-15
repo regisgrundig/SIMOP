@@ -232,23 +232,29 @@ echo "*By reginaldo.venturadesa@gmail.com "                             >>figura
 echo "'open modelo_all.ctl'"            >>figura3.gs
 echo "'set mpdset hires'"               >>figura3.gs
 echo "'set gxout shaded'"               >>figura3.gs
+#
+# pega parametros de execucao do grads
+# se é retrato ou paisagem
+#
 echo "'q gxinfo'"   >>figura3.gs
 echo "var=sublin(result,2)"  >>figura3.gs
 echo "page=subwrd(var,4)" >>figura3.gs
 echo "say page" >>figura3.gs
+#
+# se for retrato cria vpage
+#
 echo "if (page ="8.5") " >>figura3.gs
 echo "'set parea 0.5 8.5 1.5 10.2'" >>figura3.gs
-echo "'set parea 0.5 8.5 1.5 10.2'" >>figura3.gs
 echo "endif"                                  >>figura3.gs
-#echo "return" >>figura3.gs
+
+#
+# Script grads: acha o dia que cai no sábado
+#
 echo "t0=10"                            >>figura3.gs  
 echo "'set t 2 last'"                   >>figura3.gs
 echo "'q time'"                         >>figura3.gs
 echo "var3=subwrd(result,5)"            >>figura3.gs
 echo "tt=1"                             >>figura3.gs
-#
-# Script grads: acha o dia que cai no sábado
-#
 echo "while (tt<=10)"                   >>figura3.gs
 echo "'set t ' tt"                      >>figura3.gs
 echo "'q time'"                         >>figura3.gs
@@ -260,6 +266,13 @@ echo "endif"                            >>figura3.gs
 echo "tt=tt+1"                          >>figura3.gs
 echo "endwhile"                         >>figura3.gs
 echo "say t0"                           >>figura3.gs
+#
+# pega informacoes
+# de data
+# data de inicio 
+# data do sabado 
+# data final 
+#
 echo "'set t 2 't0"                     >>figura3.gs
 echo "'q time'"                         >>figura3.gs
 echo "var1=subwrd(result,3)"            >>figura3.gs
@@ -267,7 +280,6 @@ echo "var2=subwrd(result,5)"            >>figura3.gs
 echo "'set t 1 last'"                     >>figura3.gs   
 echo "'q time'"                           >>figura3.gs 
 echo "var3=subwrd(result,5)"            >>figura3.gs
-
 echo "ano1=substr(var1,9,4)"                       >>figura3.gs
 echo "mes1=substr(var1,6,3)"                       >>figura3.gs
 echo "dia1=substr(var1,4,2)"                       >>figura3.gs
@@ -278,10 +290,10 @@ echo "ano3=substr(var3,9,4)"                       >>figura3.gs
 echo "mes3=substr(var3,6,3)"                       >>figura3.gs
 echo "dia3=substr(var3,4,2)"                       >>figura3.gs
 
-
-#echo "return" >>figura3.gs
-
-
+#
+# a rotina varre o arquivo contendo os contornos das bacias
+# para cada contorno encontrado ele gera as figuras
+# 
 echo "status2=0"                       >>figura3.gs
 echo "while(!status2)" >>figura3.gs
 echo 'fd=read("../../CONTORNOS/CADASTRADAS/limites_das_bacias.dat")' >>figura3.gs
@@ -298,7 +310,10 @@ echo "tipo=subwrd(linha,7)"     >>figura3.gs
 echo "plota=subwrd(linha,8)"     >>figura3.gs
 echo "'set lon 'x1' 'x0 "       >>figura3.gs
 echo "'set lat 'y1' 'y0 "       >>figura3.gs
-
+#
+# caso a bacia se ja em forma de retrato 
+# definido no arquivo limites_das_bacias em CONTORNOS/CADASTRADAS
+#
 echo "if (tipo = "RETRATO" & page ="8.5" & plota="SIM") "   >>figura3.gs
 echo "'c'"                        >>figura3.gs
 echo "'set parea 0.5 8.5 1.5 10.2'"                                  >>figura3.gs
@@ -336,10 +351,10 @@ echo "'../../plota.gs'"                                         >>figura3.gs
 echo "'printim 'bacia'_prec07dias_"$data"_"$hora"Z.png white'"       >>figura3.gs
 echo "say t0"                           >>figura3.gs
 echo "endif"                            >>figura3.gs 
-
-
-
-
+#
+# caso a bacia se ja em forma de paisagem 
+# definido no arquivo limites_das_bacias em CONTORNOS/CADASTRADAS
+#
 echo "if (tipo = "PAISAGEM" & page ="11" & plota="SIM" ) "   >>figura3.gs
 echo "'c'"                        >>figura3.gs
 echo "'set parea 0.5 10.5 1.88392 7.31608'"                     >>figura3.gs
@@ -377,9 +392,6 @@ echo "'../../plota.gs'"                                         >>figura3.gs
 echo "'printim 'bacia'_prec07dias_"$data"_"$hora"Z.png white'"       >>figura3.gs
 echo "say t0"                           >>figura3.gs
 echo "endif"                            >>figura3.gs 
-
-
-
 echo "endif"                            >>figura3.gs 
 echo "endwhile"                            >>figura3.gs 
 echo "'quit'"                          >>figura3.gs

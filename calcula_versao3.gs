@@ -40,7 +40,7 @@ while ( 0=0 )
 *
 * abre o arquivo bacias
 *
-id=read("../../bacias")
+id=read("../../UTIL/bacias")
 *
 * se status=0 tudo ok. se não ...
 *
@@ -87,7 +87,8 @@ status2=0
 * execuo esse esse bloco ate  a leitura
 * de todos os pontos de grade que estao na bacia
 *
-
+conta=0
+chuva=0
 while (!status2)
 fd=read("../../CONTORNOS/CADASTRADAS/"bacia)
 status2=sublin(fd,1)
@@ -106,9 +107,14 @@ xlat=subwrd(coord,2)
 *
 'd prec'
 valor=subwrd(result,4) 
+if (valor < 0.2) 
+valor=0
+endif 
 chuva=chuva+valor
-conta=conta+1
+conta=conta+1 
 
+
+yyy=write("logao.prn",bacia' 'xlat' 'xlon' 'valor' 'conta' 't,append)
 
 
 

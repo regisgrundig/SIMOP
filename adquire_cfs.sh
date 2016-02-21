@@ -189,10 +189,10 @@ echo "ENDVARS">>cfs04.ctl
 # cria arquivo de indice 
 # (gribmap é comando que vem junto com o grads
 #
-gribmap -i cfs.ctl 
-gribmap -i cfs03.ctl 
-gribmap -i cfs04.ctl 
-gribmap -i cfs45.ctl 
+gribmap -i cfs.ctl    >>./LOG.prn 2>&1
+gribmap -i cfs03.ctl  >>./LOG.prn 2>&1
+gribmap -i cfs04.ctl  >>./LOG.prn 2>&1
+gribmap -i cfs45.ctl  >>./LOG.prn 2>&1
 
 
 
@@ -200,8 +200,9 @@ gribmap -i cfs45.ctl
 #
 # executa o script calculador 
 #
-grads -lbc "calcula_cfs.gs"  >>./LOG.prn 2>&1
+grads -lbc "calcula_cfs.gs"  >>./LOG.prn 2>&1  
 grads -lbc "calcula_cfs45.gs"  >>./LOG.prn 2>&1
+
 
 ##echo "["`date`"] GERANDO FIGURAS POR BACIA" 
 

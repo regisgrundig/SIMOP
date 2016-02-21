@@ -14,7 +14,7 @@
 'set t 1'
 'q time'
 data=subwrd(result,3)
-
+say result 
 
 
 

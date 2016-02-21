@@ -51,6 +51,9 @@ fi
 mkdir $dir_data  >>./LOG.prn 2>&1
 cd $dir_data   >>./LOG.prn 2>&1
 cp ../../calcula_cfs.gs .
+cp ../../calcula_cfs45.gs .
+
+
 echo "["`date`"] ADQUIRINDO DADOS CFS" 
 echo ### http://nomads.ncep.noaa.gov/pub/data/nccf/com/cfs/prod/cfs/cfs.20160215/00/time_grib_02/prate.02.2016021500.daily.grb2
 wget -nc "http://nomads.ncep.noaa.gov/pub/data/nccf/com/cfs/prod/cfs/cfs."$cfsdata2"/00/time_grib_01/prate.01."$cfsdata1".daily.grb2" 
@@ -125,10 +128,10 @@ echo "PRATEsfc   0,1,0   0,1,7 ** surface Precipitation Rate [kg/m^2/s]">>cfs.ct
 echo "ENDVARS">>cfs.ctl
 
 
-echo "dset ^prate.02."$cfsdata1".daily.grb2" > cfs03.ctl
-echo "index ^prate.02."$cfsdata1".daily.grb2.idx" >>cfs03.ctl 
+echo "dset ^prate.03."$cfsdata1".daily.grb2" > cfs03.ctl
+echo "index ^prate.03."$cfsdata1".daily.grb2.idx" >>cfs03.ctl 
 echo "undef 9.999E+20" >>cfs03.ctl
-echo "title prate.02.2016021500.daily.grb2" >>cfs03.ctl
+echo "title prate.03.2016021500.daily.grb2" >>cfs03.ctl
 echo "dtype grib2" >>cfs03.ctl
 echo "xdef 384 linear 0.000000 0.9375" >>cfs03.ctl
 echo "ydef 190 levels" >>cfs03.ctl

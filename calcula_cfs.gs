@@ -118,7 +118,7 @@ precip1=precip1+valor1
 conta1=conta1+1
 endif
 
-'d sum(pratesfc.2*6*3600,t='t',t='t+3')'
+'d sum(pratesfc.3*6*3600,t='t',t='t+3')'
 var=sublin(result,2)
 valor2=subwrd(var,4)
 *say valor' 't

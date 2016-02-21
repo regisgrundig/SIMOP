@@ -46,8 +46,7 @@ grads_data2=`date +"00Z%d%b%Y"`
 
 mkdir $dir_data  >>./LOG.prn 2>&1
 cd $dir_data   >>./LOG.prn 2>&1
-cp ../../gfs_ens.gs .
-cp ../../GFS_1P0.gs .
+
 
 echo $dir_data >gfs.config   
 
@@ -106,7 +105,7 @@ echo "gep20 0  t,y,x  ** chuva mm "$grads_data >>gfsens.ctl
 echo "endvars">>gfsens.ctl
 
 
-cp ..../calcula_gfs* .
+cp ../../calcula_gfs* .
 grads -lbc "calcula_gfs_1P0.gs"  >>./LOG.prn 2>&1
 #grads -lbc "calcula_gfs_0P25.gs"  >>./LOG.prn 2>&1
 grads -lbc "calcula_gfs_ens.gs"  >>./LOG.prn 2>&1

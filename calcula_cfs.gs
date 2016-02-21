@@ -17,7 +17,7 @@ data=subwrd(result,3)
 say result 
 
 
-
+return
 *
 *  leio arquivo bacia e processo 
 * para cada item dentro desse arquivo

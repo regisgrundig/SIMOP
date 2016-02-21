@@ -1,0 +1,58 @@
+-54.28333          -2.783333          Curua-una
+-48.3          -13.83333          Serra da Mesa
+-48.1333          -13.4          Cana Brava
+-48.3666          -9.75          Lajeado
+-49.66666          -3.75          Tucurui
+-43.5666          -6.8          Boa Esperança
+-45.2666          -18.16          Três Marias
+-40.83          -9.42          Sobradinho
+-38.32          -9.1          Itaparica
+-38.25          -9.35          Moxoto
+-37.83          -9.58          Xingo
+-47.98333          -18.45          Emborcacao
+-47.7          -19.1333          Nova Ponte
+-48.5166          -17.98333          Corumba
+-49.1          -18.41666          Itumbiara
+-49.5          -18.5          Cachoeira Dourada
+-50.5          -19.01666          Sao Simao
+-44.633          -21.28333          Camargos
+-46.316          -20.666          Furnas
+-47          -20.28          Mascarenhas de Moraes
+-47.3          -20          Estreito
+-48.23          -20          Volta Grande
+-48.55          -20          Porto Colombia
+-47          -21.6166          Aso
+-49.183          -20.3          Marimbondo
+-50.35          -19.886          Agua Vermelha
+-46          -23.5666          Ponte Nova
+-48.55          -22.51666          Barra Bonita
+-49.78333          -21.3          Promissao
+-51.3166666666667          -20.68          Tres Irmaos
+-51.36665          -20.38333          Ilha Solteira
+-51.63333          -20.78333          Jupia
+-52.96666          -22.46666          Porto Primavera
+-49.23          -23.21666          Jurumirim
+-49.7333          -23.01          Xavantes
+-51.33333          -22.65          Capivara
+-52.8666          -22.5          Rosana
+-54.58333          -25.41666          Itaipu          
+-51.65          -26          Foz do Areia
+-52          -25.78          Segredo
+-52.61666          -25.65          Salto Santiago
+-53          -25.53333          Salto Osorio
+-53.48          -25.5333          Salto Caxias
+-51.78333          -27.5166          Machadinho
+-52.38333          -27.26666          Ita
+-52.73333          -27.55          Passo Fundo
+-53.18333          -29.01666          Passo real
+-53.26666          -29.43333          Dona Francisca
+-45.6666          -23.38333          Paraibuna
+-46          -23.2          Jaguari
+-44.5666          -22.51666          Funil
+-43.8333          -22.48333          Santa Cecilia
+-43.55          -21.85          Ilha dos pombos
+-40.9833          -19.5          Mascarenhas
+-41.7          -20.92          Rosal
+-54.83          -14.8666          Manso
+-48.03          -18.916          Miranda
+-50.2          -21.1166666666667          Nova Avanhandava

@@ -66,11 +66,14 @@ cadastro= {
 
 [ numB, ~]=size(bacias);
 
-pid=fopen('../CADASTRADAS/limites_das_bacias.dat','w');
+pid=fopen('limites_das_bacias.dat','w');
 for i=1:numB
 
-m1=dlmread(char(bacias(i,1)),',',2);
+%m1=dlmread(char(bacias(i,1)),',',2)
+m1=dlmread(char(bacias(i,1)),',')
 %n1=dlmread('pontos_grade_eta40.prn',',');
+
+
 n1=dlmread('pontos_de_grade_25km.prn',' ');
 
 
@@ -85,7 +88,7 @@ y1=min(m1(:,2));
   fprintf(pid,'%s %s %10.4f %10.4f %10.4f %10.4f\n',char(output(i,1)),char(shapes(i,1)),x0,x1,y0,y1);
 
 [ii ,jj]=size(in1);
-fid=fopen(strcat('../CADASTRADAS/',char(output(i,1)),'.bacia'),'w');
+fid=fopen(strcat('./',char(output(i,1)),'.bacia'),'w');
 
 
 for  j=1:ii
@@ -97,7 +100,7 @@ end
 
 end
 
-pid2=fopen('../../bacias','w');
+pid2=fopen('bacias','w');
 for i=1:length(cadastro)
 fprintf(pid2,'%s\n',cadastro{i});
 end

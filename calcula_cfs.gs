@@ -99,7 +99,7 @@ if (valor >=0 )
 *say precip' 't
 precip=precip+valor
 conta=conta+1
-
+endif
 
 'd sum(pratesfc.2*6*3600,t='t',t='t+3')'
 var=sublin(result,2)
@@ -110,6 +110,7 @@ if (valor1 >=0 )
 *say precip' 't
 precip1=precip1+valor1
 conta1=conta1+1
+endif
 
 'd sum(pratesfc.2*6*3600,t='t',t='t+3')'
 var=sublin(result,2)
@@ -120,9 +121,8 @@ if (valor2 >=0 )
 *say precip' 't
 precip2=precip2+valor2
 conta2=conta2+1
+endif
 
-
-yyy=write("logao.prn",bacia' 'xlat' 'xlon' 'valor' 'conta' 'precip' 't,append)
 
 
 

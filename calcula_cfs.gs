@@ -17,7 +17,7 @@ data=subwrd(result,3)
 say result 
 
 
-return
+
 *
 *  leio arquivo bacia e processo 
 * para cada item dentro desse arquivo
@@ -130,8 +130,8 @@ conta2=conta2+1
 endif
 
 
-
-
+else
+say "xxxxxxxxxxxxxxxxxxxxx"
 endif
 endwhile
 
@@ -150,9 +150,9 @@ rc32 = math_format("%5.2f",media2)
 fim=write(bacia,data' 'dataprev' 'rc3)
 xxx=write("todomundo.prn",data' 'dataprev' 'rc3' 'rc31' 'rc32,append)
 t=t+4
-endwhile
+endwhile ****************linha 68
 
-************  da linha 36
+************  da linha 26
 endwhile    
 'quit'
 'quit'

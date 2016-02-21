@@ -56,8 +56,14 @@ say "calculando para  bacia:"bacia
 status2=status
 chuva=0
 conta=0
+conta1=0
+conta2=0
+
 p=0 
 precip=0
+precip1=0
+precip2=0
+
 _pchuva.1=0
 while (t<=424)
 'set t ' t+1

@@ -126,8 +126,6 @@ endif
 
 
 
-endif 
-*ay result
 endif
 endwhile
 

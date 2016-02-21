@@ -66,10 +66,10 @@ wget -nc "http://nomads.ncep.noaa.gov/pub/data/nccf/com/cfs/prod/cfs/cfs."$cfsda
 # cria o .ctl 
 #
 
-echo "dset ^prate.02."$cfsdata1".daily.grb2" > cfs45.ctl
-echo "index ^prate.02."$cfsdata1".daily.grb2.idx" >>cfs45.ctl 
+echo "dset ^prate.01."$cfsdata1".daily.grb2" > cfs45.ctl
+echo "index ^prate.01."$cfsdata1".daily.grb2.idx" >>cfs45.ctl 
 echo "undef 9.999E+20" >>cfs45.ctl
-echo "title prate.02.2016021500.daily.grb2" >>cfs45.ctl
+echo "title prate.01.2016021500.daily.grb2" >>cfs45.ctl
 echo "dtype grib2" >>cfs45.ctl
 echo "xdef 384 linear 0.000000 0.9375" >>cfs45.ctl
 echo "ydef 190 levels" >>cfs45.ctl
@@ -153,10 +153,10 @@ echo "PRATEsfc   0,1,0   0,1,7 ** surface Precipitation Rate [kg/m^2/s]">>cfs03.
 echo "ENDVARS">>cfs03.ctl
 
 
-echo "dset ^prate.02."$cfsdata1".daily.grb2" > cfs04.ctl
-echo "index ^prate.02."$cfsdata1".daily.grb2.idx" >>cfs04.ctl 
+echo "dset ^prate.04."$cfsdata1".daily.grb2" > cfs04.ctl
+echo "index ^prate.04."$cfsdata1".daily.grb2.idx" >>cfs04.ctl 
 echo "undef 9.999E+20" >>cfs04.ctl
-echo "title prate.02.2016021500.daily.grb2" >>cfs04.ctl
+echo "title prate.04.2016021500.daily.grb2" >>cfs04.ctl
 echo "dtype grib2" >>cfs04.ctl
 echo "xdef 384 linear 0.000000 0.9375" >>cfs04.ctl
 echo "ydef 190 levels" >>cfs04.ctl

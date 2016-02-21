@@ -10,6 +10,8 @@
 'open cfs.ctl'
 'open cfs03.ctl'
 'open cfs04.ctl'
+'open cfs45.ctl'
+
 
 'set t 1'
 'q time'
@@ -58,11 +60,13 @@ chuva=0
 conta=0
 conta1=0
 conta2=0
-
+conta3=0
 p=0 
 precip=0
 precip1=0
 precip2=0
+precip3=0
+
 
 _pchuva.1=0
 while (t<=400)
@@ -129,6 +133,21 @@ precip2=precip2+valor2
 conta2=conta2+1
 endif
 
+if (t <= 100) 
+'d sum(pratesfc.4*6*3600,t='t',t='t+3')'
+var=sublin(result,2)
+valor3=subwrd(var,4)
+*say valor' 't
+*say result
+if (valor3 >=0 )
+*say precip' 't
+precip3=precip3+valor3
+conta3=conta3+1
+endif
+else
+precip3=-9999
+conta3=1
+endif
 
 else
 say "xxxxxxxxxxxxxxxxxxxxx"
@@ -140,15 +159,19 @@ endwhile
 media=precip/(conta+(0.00001))
 media1=precip1/(conta1+(0.00001))
 media2=precip2/(conta2+(0.00001))
+media3=precip3/(conta3+(0.00001))
+
 
 rc1 = math_format("%7.2f",precip)
 rc2 = math_format("%7.0f",conta)
 rc3 = math_format("%5.2f",media)
 rc31 = math_format("%5.2f",media1)
 rc32 = math_format("%5.2f",media2)
+rc33 = math_format("%5.2f",media3)
 
-fim=write(bacia,data' 'dataprev' 'rc3)
-xxx=write("todomundo.prn",data' 'dataprev' 'rc3' 'rc31' 'rc32,append)
+
+fim=write(bacia,data' 'dataprev' 'rc3' 'rc31' 'rc32' 'rc33)
+xxx=write("todomundo.prn",data' 'dataprev' 'rc3' 'rc31' 'rc32' 'rc33,append)
 t=t+4
 endwhile ****************linha 68
 

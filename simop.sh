@@ -73,14 +73,13 @@ data=`date +"%Y%m%d" -d "$1 days ago"`
 datagrads=`date +"%d%b%Y" -d "$b  days ago"` 
 hora="00"
 fi
-echo "["`date`"] BAIXANDO DADOS ETA 40KM "  >>./LOG.prn 2>&1
+echo "["`date`"] BAIXANDO DADOS ETA 40KM "
 wget -nc ftp://ftp1.cptec.inpe.br/modelos/io/tempo/regional/Eta40km_ENS/prec24/$data$hora/* >>./LOG.prn 2>&1
 #
 # existem 10 arquivos .bin
 # separados fica dificil de trabalhar com os arquivos
 # por isso vou juntar todos os .bin num único do arquivo
 #
-echo "["`date`"] CRIANDO ARQUIVOS PARA O GRADS" 
 rm $data$hora".bin" >>./LOG.prn 2>&1 
 rm *.ctl            >>./LOG.prn 2>&1   
 for file in `ls -1 *.bin`
@@ -111,6 +110,7 @@ echo "ENDVARS" >>eta40km.ctl
 #
 #   CHUVA MERGE  
 #--------------------------------------------------------------------------------
+echo "["`date`"] BAIXANDO ARQUIVOS CHUVA MERGE" 
 if [ $1 ="" ];then
 grads_data=`date -d "34 days ago" +"12Z%d%b%Y"`
 else
@@ -155,6 +155,7 @@ echo "ENDVARS"                                                >>chuvamerge.ctl
 #  GFS
 #
 #----------------------------------------------------------
+echo "["`date`"] BAIXANDO ARQUIVOS  GFS 1 GRAU"
 if [ $1 ="" ];then
 dir_data=`date +"%Y%m%d"`
 grads_data2=`date +"00Z%d%b%Y" -d "1  days "`
